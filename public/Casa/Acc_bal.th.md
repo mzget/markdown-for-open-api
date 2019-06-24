@@ -1,0 +1,65 @@
+# **Account / CASA**
+
+เพื่อดูข้อมูล 2 ประเภท คือ
+
+1. รายการข้อมูลการเดินบัญชีย้อนหลัง
+2. ยอดเงินของบัญชี
+
+<br />
+<br />
+
+# Account Balance
+
+**Description**
+
+· แสดงยอดจำนวนเงินของเลขที่บัญชีที่ระบุ
+· รองรับบัญชีประเภทเงินฝากออมทรัพย์ และกระแสรายวัน
+
+```
+[GROUP][COPYABLE]
+---[Test Endpoint]---
+https://APIPORTALTEST.kasikornbank.com:12002/deposit/sight/balance/1562567456
+```
+
+**Parameters**
+
+| Field                        | Data Type | Description                         | Example          | Mandatory |
+| ---------------------------- | --------- | ----------------------------------- | ---------------- | :-------: |
+| [colspan=5] Header parameter |
+| content-type                 | string    | Type of content as application/json | application/json |     Y     |
+| [colspan=5] URL parameter    |
+| accId                        | string    | Account no.                         | 1562567456       |     Y     |
+
+**Example Request**
+
+```
+[GROUP][COPYABLE]
+---[cURL/curl]---
+curl -X GET \
+ https://APIPORTALTEST.kasikornbank.com:12002/deposit/sight/balance/{{YOUR PARAM}} \
+  -H 'cache-control': 'no-cache' \
+  -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
+  -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
+---[JS/javascript]---
+$.ajax({
+  "url": "https://APIPORTALTEST.kasikornbank.com:12002/deposit/sight/balance/{{YOUR PARAM}}",
+  "method": "GET",
+  "headers": {
+    'cache-control': 'no-cache',
+    'Partner-Id': '{{YOUR PARTNER ID}}',
+    'Partner-Secret': '{{YOUR PARTNER SECRET}}'
+  },
+  });
+```
+
+**Example Response**
+
+```json
+{
+  "data": {
+    "availBalance": 112024.5,
+    "acctBalance": 102024.5,
+    "acctStatus": "Active"
+  }
+}
+```

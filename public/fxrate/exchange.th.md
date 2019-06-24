@@ -1,0 +1,84 @@
+﻿# **Information**
+
+เพื่อดูข้อมูล 3 ประเภท คือ
+
+1. ข้อมูลและที่ตั้งตู้ ATM ธนาคารกสิกรไทย
+2. ข้อมูลและที่ตั้งสาขาธนาคารกสิกรไทย
+3. อัตราแลกเปลี่ยนต่างประเทศ
+   <br />
+   <br />
+
+# Exchange Rate
+
+**Description**
+
+อัตราแลกเปลี่ยนต่างประเทศในสกุลบาท
+
+```
+[GROUP][COPYABLE]
+---[Test Endpoint]---
+https://APIPORTALTEST.kasikornbank.com:12002/info/fxrate
+```
+
+**Example Request**
+
+```
+[GROUP][COPYABLE]
+  ---[cURL/curl]---
+curl -X GET \
+  https://APIPORTALTEST.kasikornbank.com:12002/info/fxrate \
+  -H 'cache-control': 'no-cache' \
+  -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
+  -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
+---[JS/javascript]---
+$.ajax({
+  "url": "https://APIPORTALTEST.kasikornbank.com:12002/info/fxrate",
+  "method": "GET",
+  "headers": {
+    'cache-control': 'no-cache',
+    'Partner-Id': '{{YOUR PARTNER ID}}',
+    'Partner-Secret': '{{YOUR PARTNER SECRET}}'
+  },
+  });
+```
+
+**Example Response**
+
+```json
+{
+  "rates": [
+    {
+      "underlyingCurrency": "AED",
+      "descriptionCurrency": "UAE Dirham",
+      "baseCurrency": "THB",
+      "denomination": null,
+      "buy": {
+        "travellercheque": null,
+        "exportsightbill": 8.276,
+        "telextransfer": 8.276,
+        "banknotes": 7.2275
+      },
+      "sell": {
+        "tt_draft_cheque": 9.10173,
+        "banknotes": 9.13294
+      }
+    },
+    {
+      "underlyingCurrency": "AUD",
+      "descriptionCurrency": "Australian Dollar",
+      "baseCurrency": "THB",
+      "denomination": null,
+      "buy": {
+        "travellercheque": 22.17275,
+        "exportsightbill": 22.17275,
+        "telextransfer": 22.25242,
+        "banknotes": 21.97155
+      },
+      "sell": {
+        "tt_draft_cheque": 23.211695,
+        "banknotes": 23.41761
+      }
+    }
+  ]
+}
+```

@@ -1,0 +1,64 @@
+﻿# **Information**
+
+เพื่อดูข้อมูล 3 ประเภท คือ
+
+1. ข้อมูลและที่ตั้งตู้ ATM ธนาคารกสิกรไทย
+2. ข้อมูลและที่ตั้งสาขาธนาคารกสิกรไทย
+3. อัตราแลกเปลี่ยนต่างประเทศ
+   <br />
+   <br />
+
+# KBank ATM Location
+
+**Description**
+
+ค้นหาข้อมูลและที่ตั้งตู้ ATM ธนาคารกสิกรไทย
+
+```
+[GROUP][COPYABLE]
+---[Test Endpoint]---
+https://APIPORTALTEST.kasikornbank.com:12002/info/atm/CDM04723
+```
+
+**Example Request**
+
+```
+[GROUP][COPYABLE]
+---[cURL/curl]---
+curl -X GET \
+  https://APIPORTALTEST.kasikornbank.com:12002/info/atm/CDM04723 \
+  -H 'cache-control': 'no-cache' \
+  -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
+  -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
+---[JS/javascript]---
+$.ajax({
+  "url": "https://APIPORTALTEST.kasikornbank.com:12002/info/atm/CDM04723",
+  "method": "GET",
+  "headers": {
+    'cache-control': 'no-cache',
+    'Partner-Id': '{{YOUR PARTNER ID}}',
+    'Partner-Secret': '{{YOUR PARTNER SECRET}}'
+  },
+  });
+```
+
+**Example Response**
+
+```json
+{
+  "atms": [
+    {
+      "atmCode": "CDM04723",
+      "locationGr": "MiniBranch",
+      "branchTh": "ศูนย์แพลทตินั่มพหลโยธิน ชั้น 2 (ฝาก)",
+      "branchEn": "PHAHON YOTHIN MAIN BRANCH Fl.2",
+      "roadTh": "ถนนพหลโยธิน",
+      "roadEn": "PHAHON YOTHIN RD.",
+      "addressTh": "ศูนย์แพลทตินั่มพหลโยธิน ชั้น 2 (ฝาก)",
+      "addressEn": "PHAHON YOTHIN MAIN BRANCH Fl.2",
+      "province": "กรุงเทพมหานคร:BANGKOK",
+      "amphur": "พญาไท:PHAYA THAI"
+    }
+  ]
+}
+```
