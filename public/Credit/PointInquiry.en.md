@@ -7,7 +7,6 @@ For 3 types of information:
 3. Credit Card Unbilled Transactions Inquiry
 
 <br />
-<br />
 
 # Credit Card Point Inquiry
 
