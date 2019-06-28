@@ -4,10 +4,10 @@
 
 ก่อนเข้าใช้งาน APIs กรุณา
 
-<pre>
+<p>
 1) สมัครใช้งานเพื่อ <strong><a href="/open-api/register">สร้าง Account</a></strong> ใหม่
 2) ทำตามขั้นตอนในการสมัครใช้งาน และทำการ <strong><a href="/open-api/login">Log In</a></strong> เข้าสู่ระบบ
-</pre>
+</p>
 
 --- 
   
