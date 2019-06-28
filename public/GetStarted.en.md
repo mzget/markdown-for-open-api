@@ -17,10 +17,10 @@ Here’s what you do:
 
 ## <img src="https://firebasestorage.googleapis.com/v0/b/imageupload-19583.appspot.com/o/icon_partner.png?alt=media&token=b210871c-6594-400e-8cd1-b0534c1950db" alt="partner"  width="25" height="25"  style="object-fit: contain; margin-right: 10px;" /><a name="step2"><strong>STEP 2:</strong> Partner ID & Partner Secret</a>
 
-<p>
+<pre>
 To get your <b>PartnerID and PartnerSecret</b>, you'll first need to create an App in your <strong><a href="/open-api/my-apps">Application Dashboard</a></strong>
 (We’ve already created 1st testing application for you)
-</p>
+</pre>
 
   <div class="image-wrap" style="text-align: center; margin: 30px 0px ;" >
 <img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/Screen%20Shot%202562-06-06%20at%2014.16.52.png?alt=media&token=3478710f-3e3b-4335-82ac-676740857e92" alt="dashboard"  width="80%" height="auto" /></div>
