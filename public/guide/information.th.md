@@ -19,7 +19,7 @@
 2) กดปุ่ม Call API
 </p>
 <div class="image-wrap" style="text-align: center; margin: 30px 0px ;" >
-<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/atmLo.png?alt=media&token=66ce05c3-b7d7-42e2-9573-cf966f101817" /></div>
+<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/atmLo.png?alt=media&token=66ce05c3-b7d7-42e2-9573-cf966f101817" width="80%" /></div>
 
 ---
 
@@ -29,7 +29,7 @@
 1) กดปุ่ม Call API เพื่อแสดงรายละเอียด Branch Location ทั้งหมด
 </p>
 <div class="image-wrap" style="text-align: center; margin: 30px 0px ;" >
-<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/branch.png?alt=media&token=94f50896-715c-4e38-a896-da7d6f9c2cb1" /></div>
+<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/branch.png?alt=media&token=94f50896-715c-4e38-a896-da7d6f9c2cb1" width="80%" /></div>
 
 ---
 
@@ -40,7 +40,7 @@
 </p>
 <p>2) กดปุ่ม Call API</p>
 <div class="image-wrap" style="text-align: center; margin: 30px 0px ;" >
-<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/branchDetail.png?alt=media&token=94fced51-32cf-4ea4-9a6e-fa5b21b7d29f" /></div>
+<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/branchDetail.png?alt=media&token=94fced51-32cf-4ea4-9a6e-fa5b21b7d29f" width="80%" /></div>
 
 ---
 
@@ -50,7 +50,7 @@
 1) กดปุ่ม Call API เพื่อแสดงรายละเอียด Exchange Rate ทั้งหมด
 </p>
 <div class="image-wrap" style="text-align: center; margin: 30px 0px ;" >
-<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/exchange.png?alt=media&token=95c30259-ba2e-4f14-a61b-5242dc89c473" /></div>
+<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/exchange.png?alt=media&token=95c30259-ba2e-4f14-a61b-5242dc89c473" width="80%" /></div>
 
 ---
 
@@ -61,7 +61,7 @@
 </p>
 <p>2) กดปุ่ม Call API</p>
 <div class="image-wrap" style="text-align: center; margin: 30px 0px ;" >
-<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/exchangeDetail.png?alt=media&token=57149e9f-c14c-4252-a507-9b0e684d3768" /></div>
+<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/exchangeDetail.png?alt=media&token=57149e9f-c14c-4252-a507-9b0e684d3768" width="80%" /></div>
 
 \*\* หมายเหตุ: หากเรียกผ่าน PostMan กรุณาระบุ URL ตาม Test EndPoint ที่ระบุไว้ และใส่ Partner-Id และ Partner-Secret ในส่วนของ Header
 

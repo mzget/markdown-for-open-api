@@ -21,12 +21,12 @@
 1) กรอกข้อมูล mobileNum และ cardNum4Digits  และ redemptionAmtใน Body ตามที่ระบุในตาราง 
 </p>
 <div class="image-wrap" style="text-align: center; margin: 30px 0px ;" >
-<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/ccredemparam.png?alt=media&token=fd28e581-ea9e-4a79-a237-6eb273b18a31" /></div>
+<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/ccredemparam.png?alt=media&token=fd28e581-ea9e-4a79-a237-6eb273b18a31" width="80%" /></div>
 <p>
 2) กดปุ่ม Call API
 </p>
 <div class="image-wrap" style="text-align: center; margin: 30px 0px ;" >
-<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/ccredem.png?alt=media&token=ee69922f-197b-424b-a54c-e24df7325b40" /></div>
+<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/ccredem.png?alt=media&token=ee69922f-197b-424b-a54c-e24df7325b40" width="80%" /></div>
 
 ---
 
@@ -36,12 +36,12 @@
 1) กรอกข้อมูล mobileNum และ cardNum4Digits ใน Body ตามที่ระบุในตาราง 
 </p>
 <div class="image-wrap" style="text-align: center; margin: 30px 0px ;" >
-<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/ccunbilparam.png?alt=media&token=0736a96c-efaa-40ca-98ce-7edee1b8e455" /></div>
+<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/ccunbilparam.png?alt=media&token=0736a96c-efaa-40ca-98ce-7edee1b8e455" width="80%" /></div>
 <p>
 2) กดปุ่ม Call API
 </p>
 <div class="image-wrap" style="text-align: center; margin: 30px 0px ;" >
-<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/ccunbill.png?alt=media&token=0bf2f96d-a09b-418f-8888-b3634f89092e" /></div>
+<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/ccunbill.png?alt=media&token=0bf2f96d-a09b-418f-8888-b3634f89092e" width="80%" /></div>
 
 \*\* หมายเหตุ: หากเรียกผ่าน PostMan กรุณาระบุ URL ตาม Test EndPoint ที่ระบุไว้ และใส่ Partner-Id และ Partner-Secret ในส่วนของ Header
 
