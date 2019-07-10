@@ -8,8 +8,10 @@ To start building with our APIs, you'll need to sign up for account.
 
 Here’s what you do:
 
-<pre>
+<p>
 1) <strong><a href="/open-api/register">Sign Up</a></strong> for an account.
+</p>
+<p>
 2) Follow the registration flow, then <strong><a href="/open-api/login">Log In</a></strong>
 </pre>
 
@@ -17,10 +19,11 @@ Here’s what you do:
 
 ## <img src="https://firebasestorage.googleapis.com/v0/b/imageupload-19583.appspot.com/o/icon_partner.png?alt=media&token=b210871c-6594-400e-8cd1-b0534c1950db" alt="partner"  width="25" height="25"  style="object-fit: contain; margin-right: 10px;" /><a name="step2"><strong>STEP 2:</strong> Partner ID & Partner Secret</a>
 
-<pre>
+<p>
 To get your <b>PartnerID and PartnerSecret</b>, you'll first need to create an App in your
 <strong><a href="/open-api/my-apps">Application Dashboard</a></strong>
-</pre>
+</p>
+
 (we’re already create 1st testing application for you)
 
 <div class="image-wrap" style="text-align: center; margin: 30px 0px ;" >
