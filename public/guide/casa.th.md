@@ -32,4 +32,4 @@
 
 <br/>
 <br/>
-<a href="/open-api/api-catalogs"><button>> Account / CASA</button></a>
+<a href="/open-api/doc/casa"><button>> VIEW DOCUMENT</button></a>

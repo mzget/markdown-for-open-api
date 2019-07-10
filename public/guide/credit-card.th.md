@@ -47,4 +47,4 @@
 
 <br/>
 <br/>
-<a href="/open-api/api-catalogs"><button>> Credit Card API</button></a>
+<a href="/open-api/doc/credit-card"><button>> VIEW DOCUMENT</button></a>
