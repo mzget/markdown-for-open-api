@@ -31,13 +31,13 @@ https://kbankapi.tech/v1/promptpay/transactions?sendingBank={sendingBank}&transr
 | [colspan=2] Dataset 1 (Online Fund Transfer)  |
 | sendingBank        	       | 004 |
 | transref                     | 019182105907167129 |
-| [colspan=2] Dataset 2 (PromptPay_Transfer_Mobile)	   |
+| [colspan=2] Dataset 2 (PromptPay Transfer Mobile)	   |
 | sendingBank        	       | 004 |
 | transref                     | 019183135058827134 |
 | [colspan=2] Dataset 3	(Fund transfer)	   |
 | sendingBank        	       | 004 |
 | transref                     | 019183135540904172 |
-| [colspan=2] Dataset 4 (Bill_Payment)	   |
+| [colspan=2] Dataset 4 (Bill Payment)	   |
 | sendingBank        	       | 004 |
 | transref                     | 019183135837377182 |
 | [colspan=2] Dataset 5 (Promptpay E-wallet)	   |
