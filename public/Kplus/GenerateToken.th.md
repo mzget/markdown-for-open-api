@@ -27,7 +27,7 @@ https://kbankapi.tech/v1/kplus/payment/generate-token
 | reference2                   | string    | อ้างอิง2                                   |                                                      |     N     |
 | totalAmount                  | string    | จำนวนทั้งหมด                               | 000000005000 = 50.00THB                              |     Y     |
 | shopImageUrl                 | string    | รูปของร้านค้า url                          |                                                      |     Y     |
-| partnerIconUrl               | string    | รูปสัญลักษณ์ Partner url                   |                                                      |           |
+| partnerIconUrl               | string    | รูปสัญลักษณ์ Partner url                   |                                                      |     N     |
 | shopName                     | string    | ชื่อร้านค้า                                |                                                      |     Y     |
 | shippingFee                  | string    | ค่าธรรมเนียมขนส่ง                          | 000000005000 = 50.00THB                              |     Y     |
 | osPlatform                   | string    | ระบบปฏิบัติการ                             | IOS / ANDROID                                        |     Y     |
