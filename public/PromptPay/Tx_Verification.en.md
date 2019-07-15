@@ -1,6 +1,3 @@
-for Transaction Verification
-<br />
-
 # Transaction Verification
 **Description**
 Creditor bank (Receiving Bank) can verify payment transaction using unique reference from Debtor Bank (Sending Bank) where Bank account already been deducted from Debtor bank customer.
@@ -73,6 +70,7 @@ $.ajax({
 
 **Example Response**
 ```json
+{
     "transRef": "019182105907167129",
     "sendingBank": "004",
     "receivingBank": "069",
