@@ -1,6 +1,3 @@
-ใช้สำหรับตรวจสอบสถานะของการทำรายการนั้นๆ
-<br />
-
 # Transaction Verification
 **Description**
 
@@ -72,6 +69,7 @@ $.ajax({
 
 **Example Response**
 ```json
+{
     "transRef": "019182105907167129",
     "sendingBank": "004",
     "receivingBank": "069",
