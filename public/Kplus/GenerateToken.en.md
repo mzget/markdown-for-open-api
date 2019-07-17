@@ -32,9 +32,9 @@ https://kbankapi.tech/v1/kplus/payment/generate-token
 | shippingFee                  | string    | Order shipping fee                                           | 000000005000 = 50.00THB                              |     Y     |
 | osPlatform                   | string    | OS platform                                                  | IOS / ANDROID                                        |     Y     |
 | items                        | array     | Array of item that customer bought                           |                                                      |     N     |
-| itemName                     | string    | Name of item                                                 |                                                      |     N     |
-| quantity                     | number    | Quantity of item                                             | 1                                                    |     N     |
-| amount                       | string    | Amount                                                       | 000000005000 = 50.00THB                              |     Y     |
+| items.itemName               | string    | Name of item                                                 |                                                      |     N     |
+| items.quantity               | number    | Quantity of item                                             | 1                                                    |     N     |
+| items.amount                 | string    | Amount                                                       | 000000005000 = 50.00THB                              |     Y     |
 | currencyCode                 | string    | Currency Code                                                | THB                                                  |     Y     |
 | currencyExponent             | string    | Currency Exponent                                            | 2                                                    |     Y     |
 | buyerName                    | string    | Name of buyer                                                |                                                      |     N     |
