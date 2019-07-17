@@ -1,5 +1,11 @@
-3.1 Confirm Payment
+# Confirm Payment
 
-3.1.1 Description
+**Description**
 
-· [Th] เพื่อยืนยันการชำระเงินไปยังระบบของ Partner
+เพื่อยืนยันการชำระเงินไปยังระบบของ Partner
+
+```
+[GROUP][COPYABLE]
+---[Test Endpoint]---
+https://yourdomain.com/kplus/payment-callback
+```
