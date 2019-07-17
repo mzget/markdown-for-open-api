@@ -2,7 +2,7 @@
 
 **Description**
 
-เพื่อดูสถาณะของรหัส Token
+เพื่อดูสถานะของรหัส Token
 
 ```
 [GROUP][COPYABLE]
