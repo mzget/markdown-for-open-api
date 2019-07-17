@@ -32,9 +32,9 @@ https://kbankapi.tech/v1/kplus/payment/generate-token
 | shippingFee                  | string    | ค่าธรรมเนียมขนส่ง                          | 000000005000 = 50.00THB                              |     Y     |
 | osPlatform                   | string    | ระบบปฏิบัติการ                             | IOS / ANDROID                                        |     Y     |
 | items                        | array     | รายละเอียดรายการสั่งซื้อ                   |                                                      |     N     |
-| itemName                     | string    | ชื่อสินค้า                                 |                                                      |     N     |
-| quantity                     | number    | จำนวน                                      | 1                                                    |     N     |
-| amount                       | string    | ราคา                                       | 000000005000 = 50.00THB                              |     Y     |
+| items.itemName               | string    | ชื่อสินค้า                                 |                                                      |     N     |
+| items.quantity               | number    | จำนวน                                      | 1                                                    |     N     |
+| items.amount                 | string    | ราคา                                       | 000000005000 = 50.00THB                              |     Y     |
 | currencyCode                 | string    | สกุลเงิน                                   | THB                                                  |     Y     |
 | currencyExponent             | string    | แปลงสกุลเงิน                               | 2                                                    |     Y     |
 | buyerName                    | string    | ชื่อผู้ซื้อ                                |                                                      |     N     |
