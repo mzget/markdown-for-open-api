@@ -74,14 +74,17 @@ $.ajax({
 
 ```json
 {
-    "errorCode": "KP9999",
-    "errorDesc": "kbank internal error",
-    "partnerId": null,
-    "partnerTxnUid": null,
-    "responseDt": "2019-07-18T21:48:25.621",
-    "statusCode": "10",
-    "callBackAppUrl": null,
-    "expiryDate": null,
-    "tokenId": null
+    "partnerId": "PTR1902369",
+    "partnerTxnUid": "transIrtses152",
+    "errorCode": null,
+    "errorDesc": null,
+    "statusCode": "00",
+    "tokenList": [
+        {
+            "tokenId": "KMCMPTzpjbelgdzimkogvbmhxyutxytahzyqglfjenb1624PMT",
+            "reference1": "KS1234567",
+            "status": "CANCELLED"
+        }
+    ]
 }
 ```
