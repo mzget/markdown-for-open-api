@@ -66,7 +66,7 @@ curl -X POST \
   -d '{
     "partnerTxnUid": "transIrtses192",
     "partnerId":"PTR1902369",
-	"partnerSecret":"7da57c4eb242435fa3e91bb7a69e2a28",
+    "partnerSecret":"7da57c4eb242435fa3e91bb7a69e2a28",
     "requestDt": "2019-07-18T17:06:42.411",
     "reference1": "KS1234567",
     "reference2": "",
