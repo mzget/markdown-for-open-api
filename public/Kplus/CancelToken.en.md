@@ -7,7 +7,7 @@ For cancelling a specified Token
 ```
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
-https://kbankapi.tech/v1/kplus/payment/cancel-token
+https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/cancel-token
 ```
 
 **Request Parameters**

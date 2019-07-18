@@ -7,7 +7,7 @@ For inquiring status of the specified Token
 ```
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
-https://kbankapi.tech/v1/kplus/payment/inquire-token
+https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/inquire-token
 ```
 
 **Request Parameters**
