@@ -1,4 +1,5 @@
 # Transaction Verification
+
 **Description**
 Creditor bank (Receiving Bank) can verify payment transaction using unique reference from Debtor Bank (Sending Bank) where Bank account already been deducted from Debtor bank customer.
 
@@ -7,42 +8,42 @@ This API can rectify on the problem where customer already paid or transfer mone
 ```
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
-https://kbankapi.tech/v1/promptpay/transactions?sendingBank={sendingBank}&transref={transRef}
+https://APIPORTALTEST.kasikornbank.com:12002/promptpay/transactions?sendingBank={sendingBank}&transref={transRef}
 ```
 
 **Parameters**
 
-| Field                        | Data Type | Description                                                  | Example          | Mandatory |
-| ---------------------------- | --------- | ------------------------------------------------------------ | ---------------- | :-------: |
+| Field                        | Data Type | Description                         | Example            | Mandatory |
+| ---------------------------- | --------- | ----------------------------------- | ------------------ | :-------: |
 | [colspan=5] Header parameter |
-| content-type                 | string    | Type of content as application/json                          | application/json |     Y     |
-| Partner-Id                   | string    | Partner-Id     						                      |  				 |     Y     |
-| Partner-Secret               | string    | Partner-Secret                                               |    				 |     Y     |
+| content-type                 | string    | Type of content as application/json | application/json   |     Y     |
+| Partner-Id                   | string    | Partner-Id                          |                    |     Y     |
+| Partner-Secret               | string    | Partner-Secret                      |                    |     Y     |
 | [colspan=5] query parameter  |
-| sendingBank                  | string    | sending bank 												  | 004		         |     Y     |
-| transref 			           | string    | transaction reference                          			  | 019182105907167129 |     Y     |
+| sendingBank                  | string    | sending bank                        | 004                |     Y     |
+| transref                     | string    | transaction reference               | 019182105907167129 |     Y     |
 
 <br />
 
 **TEST DATA**
 
-| Field                        | Value |
-| ---------------------------- | --------- |
-| [colspan=2] Dataset 1 (Online Fund Transfer)  |
-| sendingBank        	       | 004 |
-| transref                     | 019182105907167129 |
-| [colspan=2] Dataset 2 (PromptPay Transfer Mobile)	   |
-| sendingBank        	       | 004 |
-| transref                     | 019183135058827134 |
-| [colspan=2] Dataset 3	(Fund transfer)	   |
-| sendingBank        	       | 004 |
-| transref                     | 019183135540904172 |
-| [colspan=2] Dataset 4 (Bill Payment)	   |
-| sendingBank        	       | 004 |
-| transref                     | 019183135837377182 |
-| [colspan=2] Dataset 5 (Promptpay E-wallet)	   |
-| sendingBank        	       | 004 |
-| transref                     | 019183140443361142 |
+| Field                                             | Value              |
+| ------------------------------------------------- | ------------------ |
+| [colspan=2] Dataset 1 (Online Fund Transfer)      |
+| sendingBank                                       | 004                |
+| transref                                          | 019182105907167129 |
+| [colspan=2] Dataset 2 (PromptPay Transfer Mobile) |
+| sendingBank                                       | 004                |
+| transref                                          | 019183135058827134 |
+| [colspan=2] Dataset 3 (Fund transfer)             |
+| sendingBank                                       | 004                |
+| transref                                          | 019183135540904172 |
+| [colspan=2] Dataset 4 (Bill Payment)              |
+| sendingBank                                       | 004                |
+| transref                                          | 019183135837377182 |
+| [colspan=2] Dataset 5 (Promptpay E-wallet)        |
+| sendingBank                                       | 004                |
+| transref                                          | 019183140443361142 |
 
 <br />
 
@@ -69,6 +70,7 @@ $.ajax({
 ```
 
 **Example Response**
+
 ```json
 {
     "transRef": "019182105907167129",
@@ -92,12 +94,11 @@ $.ajax({
             "value": "xxx-x-x7404-x"
         }
     },
-    "amount": 21.00,
-    "paidLocalAmount": 21.00,
-    "transFeeAmount": 0.00,
+    "amount": 21.0,
+    "paidLocalAmount": 21.0,
+    "transFeeAmount": 0.0,
     "ref1": null,
     "ref2": null,
     "ref3": null
 }
-
 ```

@@ -7,7 +7,7 @@ For generating order token used as a reference of products order with details of
 ```
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
-https://kbankapi.tech/v1/kplus/payment/generate-token
+https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/generate-token
 ```
 
 **Request Parameters**
