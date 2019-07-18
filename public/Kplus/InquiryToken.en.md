@@ -75,7 +75,7 @@ $.ajax({
      partnerSecret: '7da57c4eb242435fa3e91bb7a69e2a28',
      requestDt: '2019-07-04T18:00:42.411',
      tokenId: 'KMCMPTtbbibmvyvnutyyknckxtngiwaklpcjptykxon34f8PMT' }
-  );
+});
 ```
 
 **Example Response**
