@@ -42,3 +42,42 @@ https://yourdomain.com/kplus/payment-callback
 | statusCode    | string    | สถานะรายการ                      |
 | errorCode     | string    | เลขรหัสกรณีไม่สำเร็จ             |
 | errorDesc     | string    | คำอธิบายกรณีไม่สำเร็จ            |
+
+**Example Callback Parameters**
+
+```json
+{
+    "partnerId": "PTR1902369",
+    "partnerTxnUid": "transIrtses112",
+    "errorCode": null,
+    "errorDesc": null,
+    "statusCode": "00",
+    "paymentStatus": "PAID",
+    "paymentTimeStamp": null,
+    "paymentRefernceId": null,
+    "slipImage": null,
+    "paymentAccount": null,
+    "paymentDt": "2019-07-18T17:06:28",
+    "reference1": "KS1234567",
+    "reference2": "",
+    "totalAmount": 500.0,
+    "currencyCode": "THB",
+    "currencyExponent": null,
+    "tokenId": "KMCMPTmhfsegnzyfuzroygydfibuxjtyjxjibogmbnz276dPMT",
+    "additionalInfo1": null,
+    "additionalInfo2": null,
+    "additionalInfo3": null
+}
+```
+
+**Example Return Parameters**
+
+```json
+{
+    "statusCode": "00",
+    "errorCode": null,
+    "errorDesc": null,
+    "partnerId": "PTR1902369",
+    "partnerTxnUid": "transIrtses112"
+}
+```

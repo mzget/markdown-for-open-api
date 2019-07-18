@@ -16,8 +16,6 @@ https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/cancel-token
 | ---------------------------- | --------- | ------------------------------------------ | ---------------------------------------------------- | :-------: |
 | [colspan=5] Header parameter |
 | content-type                 | string    | Type of content as application/json        | application/json                                     |     Y     |
-| Partner-Id                   | string    | Partner-Id                                 |                                                      |     Y     |
-| Partner-Secret               | string    | Partner-Secret                             |                                                      |     Y     |
 | [colspan=5] Body parameter   |
 | partnerTxnUid                | string    | ID ไม่ซ้ำเพื่อให้ทำรายการ                  | RGH001030118001                                      |     Y     |
 | partnerId                    | string    | ID ของ Partner ที่ธนาคารกำหนดให้           | KP2XXX000033159                                      |     Y     |
@@ -39,3 +37,54 @@ https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/cancel-token
 | tokenList.tokenId    | string    | อ้างอิงการสั่งซื้อ               |
 | tokenList.reference1 | string    | อ้างอิง1                         |
 | tokenList.status     | array     | สถานะ token                      |
+
+**Example Request**
+
+```code
+[GROUP][COPYABLE]
+---[cURL/curl]---
+curl -X POST \
+  https://203.146.225.57:12002/kplus/payment/cancel-token \
+  -H 'Content-Type: application/json' \
+  -d '{
+    "partnerTxnUid": "transIrtses152",
+    "partnerId":"PTR1902369",
+    "partnerSecret":"7da57c4eb242435fa3e91bb7a69e2a28",
+    "requestDt": "2019-07-04T18:00:42.411",
+    "tokenId": "KMCMPTzpjbelgdzimkogvbmhxyutxytahzyqglfjenb1624PMT",
+    "reference1":"av"
+}'
+---[JS/javascript]---
+$.ajax({
+  method: 'POST',
+  url: 'https://203.146.225.57:12002/kplus/payment/cancel-token',
+  headers:
+   { 'Content-Type': 'application/json' },
+  body:
+   { partnerTxnUid: 'transIrtses152',
+     partnerId: 'PTR1902369',
+     partnerSecret: '7da57c4eb242435fa3e91bb7a69e2a28',
+     requestDt: '2019-07-04T18:00:42.411',
+     tokenId: 'KMCMPTzpjbelgdzimkogvbmhxyutxytahzyqglfjenb1624PMT',
+     reference1: 'av' }
+});
+```
+
+**Example Response**
+
+```json
+{
+    "partnerId": "PTR1902369",
+    "partnerTxnUid": "transIrtses152",
+    "errorCode": null,
+    "errorDesc": null,
+    "statusCode": "00",
+    "tokenList": [
+        {
+            "tokenId": "KMCMPTzpjbelgdzimkogvbmhxyutxytahzyqglfjenb1624PMT",
+            "reference1": "KS1234567",
+            "status": "CANCELLED"
+        }
+    ]
+}
+```
