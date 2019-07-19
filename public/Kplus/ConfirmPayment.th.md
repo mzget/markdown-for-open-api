@@ -4,6 +4,8 @@
 
 เพื่อยืนยันการชำระเงินไปยังระบบของ Partner
 
+<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kplus%2Fbanner-confirm-payment%402x.jpg?alt=media&token=3ba34f24-cdc7-489e-8aa6-797182df0778" alt="cover"  width="100%" height="100%"  style="object-fit: cover;" />
+
 ```
 [GROUP][COPYABLE]
 ---[Test Endpoint]---

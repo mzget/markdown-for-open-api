@@ -4,7 +4,7 @@
 
 เพื่อสร้าง token ในการอ้างอิงรายการสั่งซื้อสินค้า ประกอบด้วย ราคาทั้งหมด จำนวน และข้อมูลเพิ่มเติม
 
-<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kplus%2Fbanner-generate-token%402x.jpg?alt=media&token=c6bc55fd-6b29-4126-a9a7-ace52c15648c" alt="manage"  width="100%" height="100%"  style="object-fit: cover;" />
+<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kplus%2Fbanner-generate-token%402x.jpg?alt=media&token=c6bc55fd-6b29-4126-a9a7-ace52c15648c" alt="cover"  width="100%" height="100%"  style="object-fit: cover;" />
 
 ```
 [GROUP][COPYABLE]
