@@ -54,7 +54,7 @@ https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/inquire-token
 [GROUP][COPYABLE]
 ---[cURL/curl]---
 curl -X POST \
-   https://203.146.225.57:12002/kplus/payment/inquire-token \
+   https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/inquire-token \
   -H 'Content-Type: application/json' \
   -d '{
     "partnerTxnUid": "transIrtses222",
@@ -66,7 +66,7 @@ curl -X POST \
 ---[JS/javascript]---
 $.ajax({
   method: 'POST',
-  url: 'https://203.146.225.57:12002/kplus/payment/inquire-token',
+  url: 'https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/inquire-token',
   headers:
    { 'Content-Type': 'application/json' },
   body:

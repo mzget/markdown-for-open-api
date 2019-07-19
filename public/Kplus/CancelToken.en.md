@@ -44,7 +44,7 @@ https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/cancel-token
 [GROUP][COPYABLE]
 ---[cURL/curl]---
 curl -X POST \
-  https://203.146.225.57:12002/kplus/payment/cancel-token \
+  https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/cancel-token \
   -H 'Content-Type: application/json' \
   -d '{
     "partnerTxnUid": "transIrtses152",
@@ -57,7 +57,7 @@ curl -X POST \
 ---[JS/javascript]---
 $.ajax({
   method: 'POST',
-  url: 'https://203.146.225.57:12002/kplus/payment/cancel-token',
+  url: 'https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/cancel-token',
   headers:
    { 'Content-Type': 'application/json' },
   body:
