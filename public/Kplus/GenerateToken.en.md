@@ -2,7 +2,9 @@
 
 **Description**
 
-For generating order token used as a reference of products order with details of Total Amount, Quantity, Item (Product) Name and other additional information
+For generating order token used as a reference of an order with details of total Amount, quantity, item (product) and other additional information
+
+<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kplus%2Fbanner-generate-token%402x.jpg?alt=media&token=c6bc55fd-6b29-4126-a9a7-ace52c15648c" alt="cover"  width="100%" height="100%"  style="object-fit: cover;" />
 
 ```
 [GROUP][COPYABLE]
@@ -32,7 +34,7 @@ https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/generate-token
 | items                        | array     | Array of item that customer bought                           |                                                      |     N     |
 | items.itemName               | string    | Name of item                                                 |                                                      |     N     |
 | items.quantity               | number    | Quantity of item                                             | 1                                                    |     N     |
-| items.amount                 | string    | Amount                                                       | 000000005000 = 50.00THB                              |     Y     |
+| items.amount                 | string    | Amount                                                       | 000000005000 = 50.00THB                              |     N     |
 | currencyCode                 | string    | Currency Code                                                | THB                                                  |     Y     |
 | currencyExponent             | string    | Currency Exponent                                            | 2                                                    |     Y     |
 | buyerName                    | string    | Name of buyer                                                |                                                      |     N     |
@@ -61,7 +63,7 @@ https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/generate-token
 [GROUP][COPYABLE]
 ---[cURL/curl]---
 curl -X POST \
-  https://203.146.225.57:12002/kplus/payment/generate-token \
+  https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/generate-token \
   -H 'Content-Type: application/json' \
   -d '{
     "partnerTxnUid": "transIrtses192",
@@ -82,7 +84,7 @@ curl -X POST \
 ---[JS/javascript]---
 $.ajax({
   method: 'POST',
-  url: 'https://203.146.225.57:12002/kplus/payment/generate-token',
+  url: 'https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/generate-token',
   headers:
    { 'Content-Type': 'application/json' },
   body:

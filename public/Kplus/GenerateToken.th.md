@@ -4,6 +4,8 @@
 
 เพื่อสร้าง token ในการอ้างอิงรายการสั่งซื้อสินค้า ประกอบด้วย ราคาทั้งหมด จำนวน และข้อมูลเพิ่มเติม
 
+<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kplus%2Fbanner-generate-token%402x.jpg?alt=media&token=c6bc55fd-6b29-4126-a9a7-ace52c15648c" alt="cover"  width="100%" height="100%"  style="object-fit: cover;" />
+
 ```
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
@@ -32,7 +34,7 @@ https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/generate-token
 | items                        | array     | รายละเอียดรายการสั่งซื้อ                   |                                                      |     N     |
 | items.itemName               | string    | ชื่อสินค้า                                 |                                                      |     N     |
 | items.quantity               | number    | จำนวน                                      | 1                                                    |     N     |
-| items.amount                 | string    | ราคา                                       | 000000005000 = 50.00THB                              |     Y     |
+| items.amount                 | string    | ราคา                                       | 000000005000 = 50.00THB                              |     N     |
 | currencyCode                 | string    | สกุลเงิน                                   | THB                                                  |     Y     |
 | currencyExponent             | string    | แปลงสกุลเงิน                               | 2                                                    |     Y     |
 | buyerName                    | string    | ชื่อผู้ซื้อ                                |                                                      |     N     |
@@ -61,7 +63,7 @@ https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/generate-token
 [GROUP][COPYABLE]
 ---[cURL/curl]---
 curl -X POST \
-  https://203.146.225.57:12002/kplus/payment/generate-token \
+  https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/generate-token \
   -H 'Content-Type: application/json' \
   -d '{
     "partnerTxnUid": "transIrtses192",
@@ -82,7 +84,7 @@ curl -X POST \
 ---[JS/javascript]---
 $.ajax({
   method: 'POST',
-  url: 'https://203.146.225.57:12002/kplus/payment/generate-token',
+  url: 'https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/generate-token',
   headers:
    { 'Content-Type': 'application/json' },
   body:
