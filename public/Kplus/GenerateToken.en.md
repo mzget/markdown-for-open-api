@@ -4,7 +4,7 @@
 
 For generating order token used as a reference of an order with details of total Amount, quantity, item (product) and other additional information
 
-<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kplus%2Fbanner-generate-token.jpg?alt=media&token=4d236efb-0af1-4cba-9c90-16194f15e2d7" alt="manage"  width="100%" height="100%"  style="object-fit: contain; margin-right: 10px;" />
+<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kplus%2Fbanner-generate-token.jpg?alt=media&token=4d236efb-0af1-4cba-9c90-16194f15e2d7" alt="manage"  width="100%" height="100%"  style="object-fit: cover;" />
 
 ```
 [GROUP][COPYABLE]
