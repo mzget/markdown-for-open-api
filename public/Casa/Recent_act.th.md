@@ -21,7 +21,7 @@
 ```
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
-https://APIPORTALTEST.kasikornbank.com:12002/deposit/sight/transactions/1562567456
+https://APIPORTAL.kasikornbank.com:12002/deposit/sight/transactions/1562567456
 ```
 
 **Parameters**
@@ -39,13 +39,13 @@ https://APIPORTALTEST.kasikornbank.com:12002/deposit/sight/transactions/15625674
 [GROUP][COPYABLE]
 ---[cURL/curl]---
 curl -X GET \
- https://APIPORTALTEST.kasikornbank.com:12002/deposit/sight/transactions/{{YOUR PARAM}} \
+ https://APIPORTAL.kasikornbank.com:12002/deposit/sight/transactions/{{YOUR PARAM}} \
   -H 'cache-control': 'no-cache' \
   -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
   -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
 ---[JS/javascript]---
 $.ajax({
-  "url": "https://APIPORTALTEST.kasikornbank.com:12002/deposit/sight/transactions/{{YOUR PARAM}}",
+  "url": "https://APIPORTAL.kasikornbank.com:12002/deposit/sight/transactions/{{YOUR PARAM}}",
   "method": "GET",
   "headers": {
     'cache-control': 'no-cache',
@@ -59,38 +59,38 @@ $.ajax({
 
 ```json
 {
-  "data": {
-    "totalItems": 127,
-    "items": [
-      {
-        "toAccountName": null,
-        "channelDetail": null,
-        "merchantCode": null,
-        "toAccountNameEN": "KONKAMHOY NANTHAWAN",
-        "fromAccountId": null,
-        "outstandingBalance": 42603.82,
-        "fromBankCode": null,
-        "txnTime": "17:54:49",
-        "txnAmount": 286,
-        "fromAccountNameTH": null,
-        "toAccountNo": "0991328424",
-        "feeAmount": null,
-        "serviceBranchNo": "0923",
-        "txnDescEN": "Transfer Withdrawal ",
-        "fromAccountNameEN": null,
-        "effectiveDate": "2017-05-12",
-        "toAccountNameTH": "ก้อนคำฮ้อย นันทวัลลภ์",
-        "channelCode": "0923",
-        "txnDate": "2017-05-12",
-        "txnDesc": "โอนเงิน",
-        "chequeNo": "00000000",
-        "proxyId": null,
-        "proxyTypeCode": null,
-        "toBankCode": null,
-        "tellerId": "KMP00001",
-        "debitCreditFlag": "DR"
-      }
-    ]
-  }
+    "data": {
+        "totalItems": 127,
+        "items": [
+            {
+                "toAccountName": null,
+                "channelDetail": null,
+                "merchantCode": null,
+                "toAccountNameEN": "KONKAMHOY NANTHAWAN",
+                "fromAccountId": null,
+                "outstandingBalance": 42603.82,
+                "fromBankCode": null,
+                "txnTime": "17:54:49",
+                "txnAmount": 286,
+                "fromAccountNameTH": null,
+                "toAccountNo": "0991328424",
+                "feeAmount": null,
+                "serviceBranchNo": "0923",
+                "txnDescEN": "Transfer Withdrawal ",
+                "fromAccountNameEN": null,
+                "effectiveDate": "2017-05-12",
+                "toAccountNameTH": "ก้อนคำฮ้อย นันทวัลลภ์",
+                "channelCode": "0923",
+                "txnDate": "2017-05-12",
+                "txnDesc": "โอนเงิน",
+                "chequeNo": "00000000",
+                "proxyId": null,
+                "proxyTypeCode": null,
+                "toBankCode": null,
+                "tellerId": "KMP00001",
+                "debitCreditFlag": "DR"
+            }
+        ]
+    }
 }
 ```

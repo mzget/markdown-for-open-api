@@ -12,7 +12,7 @@ Generate dynamic QR Code for Thai QR Payment
 ```
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
-https://APIPORTALTEST.kasikornbank.com:12002/pos/qr_request
+https://APIPORTAL.kasikornbank.com:12002/pos/qr_request
 ```
 
 **Parameters**
@@ -45,7 +45,7 @@ https://APIPORTALTEST.kasikornbank.com:12002/pos/qr_request
 [GROUP][COPYABLE]
 ---[cURL/curl]---
 curl -X POST \
-  https://APIPORTALTEST.kasikornbank.com:12002/pos/qr_request \
+  https://APIPORTAL.kasikornbank.com:12002/pos/qr_request \
   -H 'cache-control: no-cache' \
   -H 'Content-Type: application/json' \
   -d '{
@@ -69,7 +69,7 @@ curl -X POST \
 var request = require("request");
 
 var options = { method: 'POST',
-  url: 'https://APIPORTALTEST.kasikornbank.com:12002/pos/qr_request',
+  url: 'https://APIPORTAL.kasikornbank.com:12002/pos/qr_request',
   headers: {
     'cache-control': 'no-cache',
     'Content-Type': 'application/json',

@@ -18,7 +18,7 @@ For 3 types of information:
 ```
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
-https://APIPORTALTEST.kasikornbank.com:12002/creditcard/point/redemption
+https://APIPORTAL.kasikornbank.com:12002/creditcard/point/redemption
 ```
 
 **Parameters**
@@ -38,13 +38,13 @@ https://APIPORTALTEST.kasikornbank.com:12002/creditcard/point/redemption
 [GROUP][COPYABLE]
 ---[cURL/curl]---
 curl -X POST \
-  https://APIPORTALTEST.kasikornbank.com:12002/creditcard/point/redemption \
+  https://APIPORTAL.kasikornbank.com:12002/creditcard/point/redemption \
   -H 'cache-control': 'no-cache' \
   -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
   -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
 ---[JS/javascript]---
 $.ajax({
-  "url": "https://APIPORTALTEST.kasikornbank.com:12002/creditcard/point/redemption",
+  "url": "https://APIPORTAL.kasikornbank.com:12002/creditcard/point/redemption",
   "method": "POST",
   "headers": {
     'cache-control': 'no-cache',
@@ -58,8 +58,8 @@ $.ajax({
 
 ```json
 {
-  "cardNumMask": "xxxx-xxxx-xxxx-5643",
-  "redemptionAmt": 100,
-  "pointBalance": 42603
+    "cardNumMask": "xxxx-xxxx-xxxx-5643",
+    "redemptionAmt": 100,
+    "pointBalance": 42603
 }
 ```

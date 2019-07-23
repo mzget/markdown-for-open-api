@@ -7,7 +7,7 @@ For cancelling a specified Token
 ```
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
-https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/cancel-token
+https://APIPORTAL.kasikornbank.com:12002/kplus/payment/cancel-token
 ```
 
 **Request Parameters**
@@ -44,7 +44,7 @@ https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/cancel-token
 [GROUP][COPYABLE]
 ---[cURL/curl]---
 curl -X POST \
-  https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/cancel-token \
+  https://APIPORTAL.kasikornbank.com:12002/kplus/payment/cancel-token \
   -H 'Content-Type: application/json' \
   -d '{
     "partnerTxnUid": "transIrtses152",
@@ -57,7 +57,7 @@ curl -X POST \
 ---[JS/javascript]---
 $.ajax({
   method: 'POST',
-  url: 'https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/cancel-token',
+  url: 'https://APIPORTAL.kasikornbank.com:12002/kplus/payment/cancel-token',
   headers:
    { 'Content-Type': 'application/json' },
   body:

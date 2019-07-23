@@ -17,7 +17,7 @@
 ```
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
-https://APIPORTALTEST.kasikornbank.com:12002/info/atm/CDM04723
+https://APIPORTAL.kasikornbank.com:12002/info/atm/CDM04723
 ```
 
 **Example Request**
@@ -26,13 +26,13 @@ https://APIPORTALTEST.kasikornbank.com:12002/info/atm/CDM04723
 [GROUP][COPYABLE]
 ---[cURL/curl]---
 curl -X GET \
-  https://APIPORTALTEST.kasikornbank.com:12002/info/atm/CDM04723 \
+  https://APIPORTAL.kasikornbank.com:12002/info/atm/CDM04723 \
   -H 'cache-control': 'no-cache' \
   -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
   -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
 ---[JS/javascript]---
 $.ajax({
-  "url": "https://APIPORTALTEST.kasikornbank.com:12002/info/atm/CDM04723",
+  "url": "https://APIPORTAL.kasikornbank.com:12002/info/atm/CDM04723",
   "method": "GET",
   "headers": {
     'cache-control': 'no-cache',
@@ -46,19 +46,19 @@ $.ajax({
 
 ```json
 {
-  "atms": [
-    {
-      "atmCode": "CDM04723",
-      "locationGr": "MiniBranch",
-      "branchTh": "ศูนย์แพลทตินั่มพหลโยธิน ชั้น 2 (ฝาก)",
-      "branchEn": "PHAHON YOTHIN MAIN BRANCH Fl.2",
-      "roadTh": "ถนนพหลโยธิน",
-      "roadEn": "PHAHON YOTHIN RD.",
-      "addressTh": "ศูนย์แพลทตินั่มพหลโยธิน ชั้น 2 (ฝาก)",
-      "addressEn": "PHAHON YOTHIN MAIN BRANCH Fl.2",
-      "province": "กรุงเทพมหานคร:BANGKOK",
-      "amphur": "พญาไท:PHAYA THAI"
-    }
-  ]
+    "atms": [
+        {
+            "atmCode": "CDM04723",
+            "locationGr": "MiniBranch",
+            "branchTh": "ศูนย์แพลทตินั่มพหลโยธิน ชั้น 2 (ฝาก)",
+            "branchEn": "PHAHON YOTHIN MAIN BRANCH Fl.2",
+            "roadTh": "ถนนพหลโยธิน",
+            "roadEn": "PHAHON YOTHIN RD.",
+            "addressTh": "ศูนย์แพลทตินั่มพหลโยธิน ชั้น 2 (ฝาก)",
+            "addressEn": "PHAHON YOTHIN MAIN BRANCH Fl.2",
+            "province": "กรุงเทพมหานคร:BANGKOK",
+            "amphur": "พญาไท:PHAYA THAI"
+        }
+    ]
 }
 ```

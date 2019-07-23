@@ -18,7 +18,7 @@
 ```
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
-https://APIPORTALTEST.kasikornbank.com:12002/deposit/sight/balance/1562567456
+https://APIPORTAL.kasikornbank.com:12002/deposit/sight/balance/1562567456
 ```
 
 **Parameters**
@@ -36,13 +36,13 @@ https://APIPORTALTEST.kasikornbank.com:12002/deposit/sight/balance/1562567456
 [GROUP][COPYABLE]
 ---[cURL/curl]---
 curl -X GET \
- https://APIPORTALTEST.kasikornbank.com:12002/deposit/sight/balance/{{YOUR PARAM}} \
+ https://APIPORTAL.kasikornbank.com:12002/deposit/sight/balance/{{YOUR PARAM}} \
   -H 'cache-control': 'no-cache' \
   -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
   -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
 ---[JS/javascript]---
 $.ajax({
-  "url": "https://APIPORTALTEST.kasikornbank.com:12002/deposit/sight/balance/{{YOUR PARAM}}",
+  "url": "https://APIPORTAL.kasikornbank.com:12002/deposit/sight/balance/{{YOUR PARAM}}",
   "method": "GET",
   "headers": {
     'cache-control': 'no-cache',
@@ -56,10 +56,10 @@ $.ajax({
 
 ```json
 {
-  "data": {
-    "availBalance": 112024.5,
-    "acctBalance": 102024.5,
-    "acctStatus": "Active"
-  }
+    "data": {
+        "availBalance": 112024.5,
+        "acctBalance": 102024.5,
+        "acctStatus": "Active"
+    }
 }
 ```

@@ -9,7 +9,7 @@
 ```
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
-https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/generate-token
+https://APIPORTAL.kasikornbank.com:12002/kplus/payment/generate-token
 ```
 
 **Request Parameters**
@@ -63,7 +63,7 @@ https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/generate-token
 [GROUP][COPYABLE]
 ---[cURL/curl]---
 curl -X POST \
-  https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/generate-token \
+  https://APIPORTAL.kasikornbank.com:12002/kplus/payment/generate-token \
   -H 'Content-Type: application/json' \
   -d '{
     "partnerTxnUid": "transIrtses192",
@@ -84,7 +84,7 @@ curl -X POST \
 ---[JS/javascript]---
 $.ajax({
   method: 'POST',
-  url: 'https://APIPORTALTEST.kasikornbank.com:12002/kplus/payment/generate-token',
+  url: 'https://APIPORTAL.kasikornbank.com:12002/kplus/payment/generate-token',
   headers:
    { 'Content-Type': 'application/json' },
   body:

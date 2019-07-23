@@ -7,7 +7,7 @@ API นี้ใช้สำหรับตรวจสอบสถานะข�
 ```
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
-https://APIPORTALTEST.kasikornbank.com:12002/promptpay/transactions?sendingBank={sendingBank}&transref={transRef}
+https://APIPORTAL.kasikornbank.com:12002/promptpay/transactions?sendingBank={sendingBank}&transref={transRef}
 ```
 
 **Parameters**
@@ -52,13 +52,13 @@ https://APIPORTALTEST.kasikornbank.com:12002/promptpay/transactions?sendingBank=
 [GROUP][COPYABLE]
 ---[cURL/curl]---
 curl -X POST \
-  https://APIPORTALTEST.kasikornbank.com:12002/promptpay/transactions?sendingBank={sendingBank}&transref={transRef} \
+  https://APIPORTAL.kasikornbank.com:12002/promptpay/transactions?sendingBank={sendingBank}&transref={transRef} \
   -H 'cache-control': 'no-cache' \
   -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
   -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
 ---[JS/javascript]---
 $.ajax({
-  "url": "https://APIPORTALTEST.kasikornbank.com:12002/promptpay/transactions?sendingBank={sendingBank}&transref={transRef}",
+  "url": "https://APIPORTAL.kasikornbank.com:12002/promptpay/transactions?sendingBank={sendingBank}&transref={transRef}",
   "method": "POST",
   "headers": {
     'cache-control': 'no-cache',

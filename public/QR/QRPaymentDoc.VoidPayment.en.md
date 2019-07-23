@@ -12,7 +12,7 @@ Void transaction on the QR Code that is paid
 ```
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
-https://APIPORTALTEST.kasikornbank.com:12002/pos/void_payment
+https://APIPORTAL.kasikornbank.com:12002/pos/void_payment
 ```
 
 **Parameters**
@@ -39,7 +39,7 @@ https://APIPORTALTEST.kasikornbank.com:12002/pos/void_payment
 [GROUP][COPYABLE]
 ---[cURL/curl]---
 curl -X POST \
-  https://APIPORTALTEST.kasikornbank.com:12002/pos/void_payment \
+  https://APIPORTAL.kasikornbank.com:12002/pos/void_payment \
   -H 'cache-control: no-cache' \
   -H 'Content-Type: application/json' \
   -d '{
@@ -58,7 +58,7 @@ var request = require("request");
 
 var options = {
   method: 'POST',
-  url: 'https://APIPORTALTEST.kasikornbank.com:12002/pos/void_payment',
+  url: 'https://APIPORTAL.kasikornbank.com:12002/pos/void_payment',
   headers: {
     'cache-control': 'no-cache',
     'Content-Type': 'application/json',
@@ -86,13 +86,13 @@ request(options, function (error, response, body) {
 
 ```json
 {
-  "partnerTxnUid": "INQ001030118001",
-  "partnerId": "POS001",
-  "partnerSecret": "PPsaiu7890yyatcionmsp01ooYY46789",
-  "requestDt": "2018-01-03T12:30:00+07:00",
-  "merchantId": "BEV06000080200",
-  "terminalId": "09000107",
-  "qrType": "3",
-  "origPartnerTxnUid": "QRH001030118001"
+    "partnerTxnUid": "INQ001030118001",
+    "partnerId": "POS001",
+    "partnerSecret": "PPsaiu7890yyatcionmsp01ooYY46789",
+    "requestDt": "2018-01-03T12:30:00+07:00",
+    "merchantId": "BEV06000080200",
+    "terminalId": "09000107",
+    "qrType": "3",
+    "origPartnerTxnUid": "QRH001030118001"
 }
 ```
