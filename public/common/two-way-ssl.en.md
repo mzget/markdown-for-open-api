@@ -4,7 +4,7 @@ KBank OpenAPI secures its connections with partners using Two-Way SSL (Mutual Au
 
 ## SSL Handshake
 
-In Two-Way SSL authentication, the client and server need to authenticate and validate each otherâ€™s identities. The authentication message exchange between client and server is called an SSL handshake, and it includes the following steps:
+In Two-Way SSL authentication, the client and server need to authenticate and validate each others identities. The authentication message exchange between client and server is called an SSL handshake, and it includes the following steps:
 
 1. A client requests access to a protected resource.
 2. The server presents its certificate to the client.
