@@ -15,3 +15,4 @@ In Two-Way SSL authentication, the client and server need to authenticate and va
 In step 5 (above), the server validates the client, which is the second part of the Two-Way SSL (Mutual Authentication) process. This is typically done by making sure that the client certificate is valid (non-expired and issued by a trusted Certificate Authority)
 
 test
+5555
