@@ -73,32 +73,32 @@ $.ajax({
 
 ```json
 {
-    "transRef": "019182105907167129",
+    "language": "TH",
+    "transRef": "019183135540904172",
     "sendingBank": "004",
-    "receivingBank": "069",
-    "transDate": "20190705",
-    "transTime": "08:12:36",
+    "receivingBank": "004",
+    "transDate": "20190702",
+    "transTime": "13:55:40",
     "sender": {
         "displayName": "โพธิจันทร ธ",
         "name": "PHOTICHANTHON P",
-        "account": {
-            "type": "BANKAC",
-            "value": "xxx-x-x7404-x"
-        }
+        "proxy": { "type": null, "value": null },
+        "account": { "type": "BANKAC", "value": "xxx-x-x2295-x" }
     },
     "receiver": {
-        "displayName": "นาย คิทแคท ช",
-        "name": "MR. KITKAT G",
-        "account": {
-            "type": "BANKAC",
-            "value": "xxx-x-x7404-x"
-        }
+        "displayName": "สรานุวัตร ม",
+        "name": "SARANUWAT M",
+        "proxy": { "type": "", "value": "" },
+        "account": { "type": "BANKAC", "value": "xxx-x-x1411-x" }
     },
-    "amount": 21.0,
-    "paidLocalAmount": 21.0,
-    "transFeeAmount": 0.0,
-    "ref1": null,
-    "ref2": null,
-    "ref3": null
+    "amount": 10.04,
+    "paidLocalAmount": 10.04,
+    "paidLocalCurrency": "764",
+    "countryCode": "TH",
+    "transFeeAmount": 0,
+    "ref1": "",
+    "ref2": "",
+    "ref3": "",
+    "toMerchantId": ""
 }
 ```
