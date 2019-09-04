@@ -2,12 +2,16 @@
 
 ## Status Code (statusCode)
 
+<br />
+
 | Value | Description |
 | ----- | ----------- |
 | 00    | Successs    |
 | 10    | Error       |
 
 ## QR Type (qrType)
+
+<br />
 
 | Value | Description | Type of Data |
 | ----- | ----------- | ------------ |
@@ -17,12 +21,16 @@
 
 ## Authentication Channel (authChannel)
 
+<br />
+
 | Value | Description        |
 | ----- | ------------------ |
 | KPLUS | K+ application     |
 | KPSME | K+ SME apllication |
 
 ## Transaction Status (txnStatus)
+
+<br />
 
 | Value     | Description                                    |
 | --------- | ---------------------------------------------- |
@@ -34,6 +42,8 @@
 | VOIDED    | Transaction is voided after it is paid.        |
 
 ## Error Codes (errorCode)
+
+<br />
 
 | Error Code                | Error Description                                                    |
 | ------------------------- | -------------------------------------------------------------------- |
