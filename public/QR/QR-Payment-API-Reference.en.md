@@ -9,6 +9,8 @@
 | 00    | Successs    |
 | 10    | Error       |
 
+<br />
+
 ## QR Type (qrType)
 
 <br />
@@ -19,6 +21,8 @@
 | 2     | WeChat Pay  | URL          |
 | 3     | ThaiQR      | Text         |
 
+<br />
+
 ## Authentication Channel (authChannel)
 
 <br />
@@ -27,6 +31,8 @@
 | ----- | ------------------ |
 | KPLUS | K+ application     |
 | KPSME | K+ SME apllication |
+
+<br />
 
 ## Transaction Status (txnStatus)
 
@@ -40,6 +46,8 @@
 | NOT_FOUND | Transaction with given id does not exist.      |
 | REQUESTED | QR is requested but not yet paid or cancelled. |
 | VOIDED    | Transaction is voided after it is paid.        |
+
+<br />
 
 ## Error Codes (errorCode)
 
