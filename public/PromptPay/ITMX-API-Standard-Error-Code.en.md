@@ -10,6 +10,8 @@
 | status --- code    | 1..1                        | 0000      | string(4)    | Error code please find detail below section. |
 | status --- message | 1..1                        | **ERROR** | string(1024) | Short explanation                            |
 
+<br />
+
 ## ITMX Failure Response Code
 
 | HTTP Response Code | Response Code | Description                                                 | Source of Response Code | Remarks                                                                                                                                                                                                                                                                                                    |
