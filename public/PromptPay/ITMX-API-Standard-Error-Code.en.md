@@ -6,7 +6,7 @@
 
 | Parameter          | Occurrence                  | Format    | Type         | Description                                  |
 | ------------------ | --------------------------- | --------- | ------------ | -------------------------------------------- |
-| status             | 0..1 - success <br> 1..1 - error | -         | object       | -                                            |
+| status             | 0..1 - success<br>1..1 - error | -         | object       | -                                            |
 | status --- code    | 1..1                        | 0000      | string(4)    | Error code please find detail below section. |
 | status --- message | 1..1                        | **ERROR** | string(1024) | Short explanation                            |
 
