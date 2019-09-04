@@ -14,13 +14,13 @@ https://APIPORTALTEST.kasikornbank.com:12002/promptpay/transactions?sendingBank=
 
 | Field                        | Data Type | Description                         | Example            | Mandatory |
 | ---------------------------- | --------- | ----------------------------------- | ------------------ | :-------: |
-| [colspan=5] Header parameter |
+| [colspan=5] Header parameters |
 | content-type                 | string    | Type of content as application/json | application/json   |     Y     |
 | Partner-Id                   | string    | Partner-Id                          |                    |     Y     |
 | Partner-Secret               | string    | Partner-Secret                      |                    |     Y     |
-| [colspan=5] query parameter  |
+| [colspan=5] URL parameters  |
 | sendingBank                  | string    | sending bank                        | 004                |     Y     |
-| transref                     | string    | transaction reference               | 019182105907167129 |     Y     |
+| transref                     | string    | Transaction Reference Number <br> Contains Reference number of the transaction required to verify the pay.                            | 019182105907167129 |     Y     |
 
 <br />
 
