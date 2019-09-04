@@ -1,4 +1,4 @@
-# ITMX PROMPTPAT API V1.1
+# ITMX PROMPTPAY API V1.1
 
 ## ITMX API Standard  Error Code
 
