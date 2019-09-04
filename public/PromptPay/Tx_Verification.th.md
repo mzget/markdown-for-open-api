@@ -20,7 +20,7 @@ https://APIPORTALTEST.kasikornbank.com:12002/promptpay/transactions?sendingBank=
 | Partner-Secret               | string    | Partner-Secret                      |                    |     Y     |
 | [colspan=5] URL parameters  |
 | sendingBank                  | string    | sending bank                        | 004                |     Y     |
-| transref                     | string    | Transaction Reference Number <br> Contains Reference number of the transaction required to verify the pay.                            | 019182105907167129 |     Y     |
+| transref                     | string    | Transaction Reference Number<br>Contains Reference number of the transaction required to verify the pay.                            | 019182105907167129 |     Y     |
 
 <br />
 
