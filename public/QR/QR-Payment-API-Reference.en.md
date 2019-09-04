@@ -1,5 +1,7 @@
 # QR Payment API Reference
 
+---
+
 ## Status Code (statusCode)
 
 <br />
