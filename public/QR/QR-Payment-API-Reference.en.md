@@ -9,7 +9,6 @@
 | 00    | Successs    |
 | 10    | Error       |
 
----
 <br />
 
 ## QR Type (qrType)
