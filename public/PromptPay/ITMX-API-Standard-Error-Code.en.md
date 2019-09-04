@@ -1,11 +1,14 @@
-ITMX-API-Standard-Error
-| test1 | test2 | test3 | test4 | test5 |
+# ITMX PROMPTPAT API V1.1
+
+## ITMX API Standard  Error Code
+
+|  |  |  |  |  |
 | ------------ | ---- | ---------------- | ---------- | --------------------------------------------------------------------------------- |
 | **data ---ref1** | 0..1 | Alphanumeric(20) | string(20) | 1st reference number on pay slip - For Bill Payment, this will be Mandatory |
 | **data ---ref2** | 0..1 | Alphanumeric(20) | string(20) | 2st reference number on pay slip - For Bill Payment, this will be **Conditional** |
 | **data ---ref3** | 0..1 | Alphanumeric(20) | string(20) | 3st reference number on pay slip - **For Bill Payment, this will be Conditional** |
 
-**JSON Failure Response Content (Http status code 4xx, 5xx):**
+### JSON Failure Response Content (Http status code 4xx, 5xx)
 
 | Parameter          | Occurrence                  | Format    | Type         | Description                                  |
 | ------------------ | --------------------------- | --------- | ------------ | -------------------------------------------- |
@@ -13,7 +16,7 @@ ITMX-API-Standard-Error
 | status --- code    | 1..1                        | 0000      | string(4)    | Error code please find detail below section. |
 | status --- message | 1..1                        | **ERROR** | string(1024) | Short explanation                            |
 
-**ITMX Failure Response Code:**
+### ITMX Failure Response Code
 
 | HTTP Response Code | Response Code | Description                                                 | Source of Response Code | Remarks                                                                                                                                                                                                                                                                                                    |
 | ------------------ | ------------- | ----------------------------------------------------------- | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
@@ -29,16 +32,16 @@ ITMX-API-Standard-Error
 | 400                | 8400          | Bad Request | Bank                    | Request missing required parameter both in URL or query parameter |
 | 400                | 8410          | Bad Request | Bank                    | ITMX missing required http headers - X-API-Version |
 | 400                | 8411          | Bad Request | Bank                    | ITMX missing required http headers - X-CRT-Version |
-| 401                | 6421          | Unauthorized | ITMX                    | Invalid API-Key, API-Secret |
-| 401                | 6422          | Unauthorized | ITMX                    | Requester bank (JWT issuer) does not match with API-Key |
-| 401                | 6423          | Unauthorized | ITMX                    | Audience must be itmx (invalid audience) |
-| 401                | 6424          | Unauthorized | ITMX                    | Missing JWT Unique Tracing Id |
-| 401                | 6701          | Unauthorized | ITMX                    | JWT Invalild signature |
-| 401                | 6702          | Unauthorized | ITMX                    | JWT Token expire |
-| 401                | 6703          | Unauthorized | ITMX                    | Invalid JWT Certificate version to verify signature |
+| 401                | 6421          | Unauthorized | ITMX                   | Invalid API-Key, API-Secret |
+| 401                | 6422          | Unauthorized | ITMX                   | Requester bank (JWT issuer) does not match with API-Key |
+| 401                | 6423          | Unauthorized | ITMX                   | Audience must be itmx (invalid audience) |
+| 401                | 6424          | Unauthorized | ITMX                   | Missing JWT Unique Tracing Id |
+| 401                | 6701          | Unauthorized | ITMX                   | JWT Invalild signature |
+| 401                | 6702          | Unauthorized | ITMX                   | JWT Token expire |
+| 401                | 6703          | Unauthorized | ITMX                   | Invalid JWT Certificate version to verify signature |
 | 401                | 8701          | Destination Bank UnAuthorized error | Bank                    | **Destination bank** throw error 401 with status code 8701 invalid ITMX signature verification |
 | 401                | 8702          | Destination Bank UnAuthorized error | Bank                    | **Destination bank** throw error JWT token expire |
 | 401                | 8703          | Destination Bank UnAuthorized error | Bank                    | **Destination bank throw** Invalid ITMX Certificate Version |
 | 403                | 6403          | Forbidden | ITMX                    | Participant bank does not subscribe to this service. |
 | 500                | 6500          | ITMX Internal Error | ITMX                    | Unknown ITMX Internal Error |
-| 500                | 8500          | Internal system error - Destination Bank | Bank                    | Destination bank throw unknown internal error |
+| 500                | 8500          | Internal system error - Destination Bank | Bank     | Destination bank throw unknown internal error |
