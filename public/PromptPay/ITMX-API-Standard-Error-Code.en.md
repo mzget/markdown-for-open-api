@@ -1,4 +1,4 @@
-# ITMX PROMPTPAY API Standard Error Code
+# ITMX PromptPay API Standard Error Code
 
 <br />
 
