@@ -1,11 +1,13 @@
-**Status Code (statusCode)**
+# QR Payment API Reference
+
+## Status Code (statusCode)
 
 | Value | Description |
 | ----- | ----------- |
 | 00    | Successs    |
 | 10    | Error       |
 
-**QR Type (qrType)**
+## QR Type (qrType)
 
 | Value | Description | Type of Data |
 | ----- | ----------- | ------------ |
@@ -13,14 +15,14 @@
 | 2     | WeChat Pay  | URL          |
 | 3     | ThaiQR      | Text         |
 
-**Authentication Channel (authChannel)**
+## Authentication Channel (authChannel)
 
 | Value | Description        |
 | ----- | ------------------ |
 | KPLUS | K+ application     |
 | KPSME | K+ SME apllication |
 
-**Transaction Status (txnStatus)**
+## Transaction Status (txnStatus)
 
 | Value     | Description                                    |
 | --------- | ---------------------------------------------- |
@@ -31,7 +33,7 @@
 | REQUESTED | QR is requested but not yet paid or cancelled. |
 | VOIDED    | Transaction is voided after it is paid.        |
 
-**Error Codes (errorCode)**
+## Error Codes (errorCode)
 
 | Error Code                | Error Description                                                    |
 | ------------------------- | -------------------------------------------------------------------- |
