@@ -1,16 +1,8 @@
-# ITMX PROMPTPAY API V1.1
+# ITMX PROMPTPAY API Standard Error Code
 
 <br />
 
-## ITMX API Standard  Error Code
-
-|  |  |  |  |  |
-| ------------ | ---- | ---------------- | ---------- | --------------------------------------------------------------------------------- |
-| **data ---ref1** | 0..1 | Alphanumeric(20) | string(20) | 1st reference number on pay slip - For Bill Payment, this will be Mandatory |
-| **data ---ref2** | 0..1 | Alphanumeric(20) | string(20) | 2st reference number on pay slip - For Bill Payment, this will be **Conditional** |
-| **data ---ref3** | 0..1 | Alphanumeric(20) | string(20) | 3st reference number on pay slip - **For Bill Payment, this will be Conditional** |
-
-### JSON Failure Response Content (Http status code 4xx, 5xx)
+## JSON Failure Response Content (Http status code 4xx, 5xx)
 
 | Parameter          | Occurrence                  | Format    | Type         | Description                                  |
 | ------------------ | --------------------------- | --------- | ------------ | -------------------------------------------- |
@@ -18,7 +10,7 @@
 | status --- code    | 1..1                        | 0000      | string(4)    | Error code please find detail below section. |
 | status --- message | 1..1                        | **ERROR** | string(1024) | Short explanation                            |
 
-### ITMX Failure Response Code
+## ITMX Failure Response Code
 
 | HTTP Response Code | Response Code | Description                                                 | Source of Response Code | Remarks                                                                                                                                                                                                                                                                                                    |
 | ------------------ | ------------- | ----------------------------------------------------------- | ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
