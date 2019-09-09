@@ -15,13 +15,13 @@ https://APIPORTALTEST.kasikornbank.com:12002/promptpay/transactions?sendingBank=
 
 | Field                        | Data Type | Description                         | Example            | Mandatory |
 | ---------------------------- | --------- | ----------------------------------- | ------------------ | :-------: |
-| [colspan=5] Header parameter |
+| [colspan=5] Header parameters |
 | content-type                 | string    | Type of content as application/json | application/json   |     Y     |
 | Partner-Id                   | string    | Partner-Id                          |                    |     Y     |
 | Partner-Secret               | string    | Partner-Secret                      |                    |     Y     |
-| [colspan=5] query parameter  |
+| [colspan=5] URL parameters  |
 | sendingBank                  | string    | sending bank                        | 004                |     Y     |
-| transref                     | string    | transaction reference               | 019182105907167129 |     Y     |
+| transref                     | string    | Transaction Reference Number<br>Contains Reference number of the transaction required to verify the pay.               | 019182105907167129 |     Y     |
 
 <br />
 
@@ -73,32 +73,32 @@ $.ajax({
 
 ```json
 {
-    "transRef": "019182105907167129",
+    "language": "TH",
+    "transRef": "019183135540904172",
     "sendingBank": "004",
-    "receivingBank": "069",
-    "transDate": "20190705",
-    "transTime": "08:12:36",
+    "receivingBank": "004",
+    "transDate": "20190702",
+    "transTime": "13:55:40",
     "sender": {
         "displayName": "โพธิจันทร ธ",
         "name": "PHOTICHANTHON P",
-        "account": {
-            "type": "BANKAC",
-            "value": "xxx-x-x7404-x"
-        }
+        "proxy": { "type": null, "value": null },
+        "account": { "type": "BANKAC", "value": "xxx-x-x2295-x" }
     },
     "receiver": {
-        "displayName": "นาย คิทแคท ช",
-        "name": "MR. KITKAT G",
-        "account": {
-            "type": "BANKAC",
-            "value": "xxx-x-x7404-x"
-        }
+        "displayName": "สรานุวัตร ม",
+        "name": "SARANUWAT M",
+        "proxy": { "type": "", "value": "" },
+        "account": { "type": "BANKAC", "value": "xxx-x-x1411-x" }
     },
-    "amount": 21.0,
-    "paidLocalAmount": 21.0,
-    "transFeeAmount": 0.0,
-    "ref1": null,
-    "ref2": null,
-    "ref3": null
+    "amount": 10.04,
+    "paidLocalAmount": 10.04,
+    "paidLocalCurrency": "764",
+    "countryCode": "TH",
+    "transFeeAmount": 0,
+    "ref1": "",
+    "ref2": "",
+    "ref3": "",
+    "toMerchantId": ""
 }
 ```
