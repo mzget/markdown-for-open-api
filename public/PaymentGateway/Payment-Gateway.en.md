@@ -1,8 +1,12 @@
-1.  System Details
+# K-Payment Gateway
+
+## Merchant Integration Guideline 1.0
+
+### 1. System Details
 
     K-Payment Gateway provided by the KASIKORNBANK Public Company Limited (hereinafter referred to as “KBank”) is the online payment service to facilitate merchants accept card payment (both credit and debit card), support multi-currencies over the world, and Thai QR payment. We provide you with the ability to customize the look and feel of your web page while ensuring that you are compliant with PCI DSS 3.2 Requirements.
 
-    1. Customer Journey
+    <strong>Customer Journey</strong>
 
        1. Card Payment
 
@@ -12,7 +16,7 @@
 
           -----------------น้องรูปภาพ-----------------
 
-2.  Test case
+### 2. Test case
 
     1. Verify SSL Certificate issued by CA (Certificate Authority)
        _ Support at least 128-bits encryption
