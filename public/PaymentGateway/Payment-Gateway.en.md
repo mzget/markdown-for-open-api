@@ -10,11 +10,11 @@
 
        1. Card Payment
 
-       -----------------น้องรูปภาพ-----------------
+       ![Card-Payment]({{site.baseurl}}/https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2FCard_Payment.png?alt=media&token=2d60b4ce-b991-4bb5-977a-fb6c4f6939bc)
 
        2. QR Payment
 
-          -----------------น้องรูปภาพ-----------------
+          ![QR-Payment]({{site.baseurl}}/https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2FQR_Payment.png?alt=media&token=d088ebcc-22ac-4e8b-87d4-8c8e59ca9b80)
 
 ### 2. Test case
 
