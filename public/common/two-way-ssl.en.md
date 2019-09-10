@@ -65,13 +65,13 @@ https://APIPORTALTEST.kasikornbank.com:12002/test/ssl
 ### Testing Two-Way SSL Connectivity Using Postman
 
 1. Download Postman from [https://www.getpostman.com/](https://www.getpostman.com/)
-2. Open Postman and go to **Preferences** > **Certificates** as shown below:
+2. Open Postman and go to **Settings** > **Certificates** as shown below:
 
    <br />
 
-   <img alt="Postman Review Certificates" src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/two-way-ssl%2FPostman-Review-Cert.png?alt=media&token=962a3b9e-51f3-4a8f-b7a6-4432c8e0d746" width="100%" />
+   <img alt="Postman Review Certificates" src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/two-way-ssl%2FPostman-Review-Cert.png?alt=media&token=002c38f8-25de-4d63-840a-16a049a1d568" width="100%" />
 
-3. Add your *certificates* and *private key*:
+3. Add your _certificates_ and _private key_:
 
    <br />
 
