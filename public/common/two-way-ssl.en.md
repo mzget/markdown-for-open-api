@@ -36,7 +36,7 @@ https://APIPORTALTEST.kasikornbank.com:12002/test/ssl
 | ----------------------------- | --------- | ----------------------------------- | ---------------- | :-------: |
 | [colspan=5] Header parameters |
 | content-type                  | string    | Type of content as application/json | application/json |     Y     |
-| [colspan=5] URL parameters    |
+| [colspan=5] Body parameters   |
 | partnerId                     | string    | Partner-Id                          |                  |     Y     |
 | partnerSecret                 | string    | Partner-Secret                      |                  |     Y     |
 
@@ -62,7 +62,7 @@ https://APIPORTALTEST.kasikornbank.com:12002/test/ssl
 
 <br />
 
-### Testing Two-Way SSL Connectivity Using Postman
+## Testing Two-Way SSL Connectivity Using Postman
 
 1. Download Postman from [https://www.getpostman.com/](https://www.getpostman.com/)
 2. Open Postman and go to **Settings** > **Certificates** as shown below:
@@ -76,3 +76,41 @@ https://APIPORTALTEST.kasikornbank.com:12002/test/ssl
    <br />
 
    <img alt="Postman Add Certificates" src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/two-way-ssl%2FPostman-Add-Cert.png?alt=media&token=16eceabe-fe8a-40ce-b01c-919b6c2d55a1" width="100%" />
+
+<br />
+
+## Sample Code for Two-Way SSL
+
+```javascript
+[GROUP][COPYABLE]
+---[JS/javascript]---
+import * as request from 'request';
+import * as fs from 'fs';
+import * as path from 'path';
+
+let keyfile = path.join(__dirname, 'kbank.pentest.1.key');
+let certificateFile = path.join(__dirname, 'kbank.pentest.1.crt');
+
+export function Request() {
+  const options = {
+    url: 'https://APIPORTAL.kasikornbank.com:12002/test/ssl',
+    agentOptions: {
+      cert: fs.readFileSync(certificateFile),
+      key: fs.readFileSync(keyfile),
+    },
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify({
+      partnerId: '',
+      partnerSecret: '',
+    }),
+  };
+  request.post(options, function(error, response, body) {
+    if (error) {
+      console.warn(error);
+    } else {
+      console.log(body);
+    }
+  });
+}
+
+```
