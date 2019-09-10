@@ -22,7 +22,7 @@ To establish a Two-Way SSL (Mutual Authentication) connection, you must have the
 - private key
 - client certificate
 
-<br />
+---
 
 ```code
 [GROUP][COPYABLE]
