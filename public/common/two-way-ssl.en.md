@@ -15,6 +15,15 @@ In Two-Way SSL authentication, the client and server need to authenticate and va
 
 In step 5 (above), the server validates the client, which is the second part of the Two-Way SSL (Mutual Authentication) process. This is typically done by making sure that the client certificate is valid (non-expired and issued by a trusted Certificate Authority)
 
+## Establishing SSL Connection
+
+To establish a Two-Way SSL (Mutual Authentication) connection, you must have the following:
+
+- private key
+- client certificate
+
+<br />
+
 ```code
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
@@ -50,3 +59,13 @@ https://APIPORTALTEST.kasikornbank.com:12002/test/ssl
   ]
 }
 ```
+
+<br />
+
+### Testing Two-Way SSL Connectivity Using Postman
+
+1. Download Postman from [Postman](https://www.getpostman.com/)
+2. Open Postman and go to Preferences > Certificates as shown below:
+   ![Postman Review Certificates](https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/two-way-ssl%2FPostman-Review-Cert.png?alt=media&token=962a3b9e-51f3-4a8f-b7a6-4432c8e0d746)
+3. Add your certificates and private key:
+   ![Postman Add Certificates](https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/two-way-ssl%2FPostman-Add-Cert.png?alt=media&token=16eceabe-fe8a-40ce-b01c-919b6c2d55a1)
