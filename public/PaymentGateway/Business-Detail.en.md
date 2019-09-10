@@ -65,7 +65,7 @@ _Example in fail case:_
 | businessTypes/businessTypeDesc   | varchar(255) | Y               | Business type description (TH)          |
 | businessTypes/businessTypeDescEn | varchar(255) | Y               | Business type description (EN)          |
 
-Results for APl
+**Results for API**
 
 | Status Code | Status Message                       |
 | ----------- | ------------------------------------ |
