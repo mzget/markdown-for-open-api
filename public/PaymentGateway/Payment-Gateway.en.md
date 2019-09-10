@@ -11,10 +11,10 @@ K-Payment Gateway provided by the KASIKORNBANK Public Company Limited (hereinaft
 <strong>Customer Journey</strong>
 
 1. Card Payment
-   <img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2FCard_Payment.png?alt=media&token=2d60b4ce-b991-4bb5-977a-fb6c4f6939bc" alt="Card Payment" />
+   <img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2FCard_Payment.png?alt=media&token=2d60b4ce-b991-4bb5-977a-fb6c4f6939bc" width="100%" alt="Card Payment" />
 
 2. QR Payment
-   <img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2FQR_Payment.png?alt=media&token=d088ebcc-22ac-4e8b-87d4-8c8e59ca9b80" alt="QR Payment">
+   <img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2FQR_Payment.png?alt=media&token=d088ebcc-22ac-4e8b-87d4-8c8e59ca9b80" width="100%" alt="QR Payment">
 
 ---
 
@@ -74,7 +74,7 @@ For testing purposes, you have to include this script into your checkout page. I
 
 When the form above has loaded, it will create an instance of a Payment form on your checkout page as follows:
 
-<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2FCheckout_Page.png?alt=media&token=9e8572c3-33bd-4a2c-ab41-f3c5d996e8d3" alt="Checkout Page" />
+<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2FCheckout_Page.png?alt=media&token=9e8572c3-33bd-4a2c-ab41-f3c5d996e8d3" width="100%" alt="Checkout Page" />
 
 Also, the data attributes that you can config with KPay.js which support collected card details and information’s from your customers.
 
