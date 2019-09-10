@@ -66,6 +66,6 @@ https://APIPORTALTEST.kasikornbank.com:12002/test/ssl
 
 1. Download Postman from [Postman](https://www.getpostman.com/)
 2. Open Postman and go to Preferences > Certificates as shown below:
-   ![Postman Review Certificates](https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/two-way-ssl%2FPostman-Review-Cert.png?alt=media&token=962a3b9e-51f3-4a8f-b7a6-4432c8e0d746)
+   <img alt="Postman Review Certificates" src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/two-way-ssl%2FPostman-Review-Cert.png?alt=media&token=962a3b9e-51f3-4a8f-b7a6-4432c8e0d746" width="100% />
 3. Add your certificates and private key:
-   ![Postman Add Certificates](https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/two-way-ssl%2FPostman-Add-Cert.png?alt=media&token=16eceabe-fe8a-40ce-b01c-919b6c2d55a1)
+   <img alt="Postman Add Certificates" src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/two-way-ssl%2FPostman-Add-Cert.png?alt=media&token=16eceabe-fe8a-40ce-b01c-919b6c2d55a1" width="100% />
