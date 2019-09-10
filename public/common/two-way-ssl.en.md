@@ -14,3 +14,39 @@ In Two-Way SSL authentication, the client and server need to authenticate and va
 6. If successful, the server grants access to the protected resource requested by the client.
 
 In step 5 (above), the server validates the client, which is the second part of the Two-Way SSL (Mutual Authentication) process. This is typically done by making sure that the client certificate is valid (non-expired and issued by a trusted Certificate Authority)
+
+```code
+[GROUP][COPYABLE]
+---[Test Endpoint]---
+https://APIPORTALTEST.kasikornbank.com:12002/test/ssl
+```
+
+**Parameters**
+
+| Field                         | Data Type | Description                         | Example          | Mandatory |
+| ----------------------------- | --------- | ----------------------------------- | ---------------- | :-------: |
+| [colspan=5] Header parameters |
+| content-type                  | string    | Type of content as application/json | application/json |     Y     |
+| [colspan=5] URL parameters    |
+| partnerId                     | string    | Partner-Id                          |                  |     Y     |
+| partnerSecret                 | string    | Partner-Secret                      |                  |     Y     |
+
+**Example Response**
+
+```json
+{
+  "statusCode": "00",
+  "certStatus": "Success",
+  "partnerStatus": "Success",
+  "errorMsg": null,
+  "certificateObjs": [
+    {
+      "subject": "CN=kbank.pentest.1, O=KBTG, ST=Bangkok, C=TH",
+      "issuer": "CN=KASIKORNBANK OpenAPI ROOT CA, OU=KBTG, O=KASIKORN BUSINESS TECHNOLOGY-GROUP, L=Ratburana, ST=Bangkok, C=TH",
+      "startDate": "Thu May 17 19:29:15 ICT 2018",
+      "expireDate": "Tue May 16 19:29:15 ICT 2023",
+      "serialNumber": "14331402536859360582"
+    }
+  ]
+}
+```
