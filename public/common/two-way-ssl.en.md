@@ -83,7 +83,7 @@ https://APIPORTALTEST.kasikornbank.com:12002/test/ssl
 
 ```javascript
 [GROUP][COPYABLE]
----[JS/javascript]---
+---[Node.js/javascript]---
 import * as request from 'request';
 import * as fs from 'fs';
 import * as path from 'path';
