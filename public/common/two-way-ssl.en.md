@@ -113,4 +113,51 @@ export function Request() {
   });
 }
 
+---[Go/go]---
+package main
+
+import (
+	"bytes"
+	"crypto/tls"
+	"encoding/json"
+	"io/ioutil"
+	"log"
+	"net/http"
+)
+
+func main() {
+	keyPair, err := tls.LoadX509KeyPair("../kbank.pentest.1/kbank.pentest.1.crt", "../kbank.pentest.1/kbank.pentest.1.key")
+	if err != nil {
+		log.Fatalln("Unable to load cert", err)
+	}
+
+	requestBody, err := json.Marshal(map[string]string{
+		"partnerId":     "",
+		"partnerSecret": "",
+	})
+	if err != nil {
+		log.Fatalln(err)
+	}
+	tr := &http.Transport{
+		TLSClientConfig: &tls.Config{
+			InsecureSkipVerify: true,
+			Certificates:       []tls.Certificate{keyPair},
+		},
+	}
+	client := &http.Client{Transport: tr}
+	resp, err := client.Post("https://APIPORTAL.kasikornbank.com:12002/test/ssl", "application/json", bytes.NewBuffer(requestBody))
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	defer resp.Body.Close()
+
+	body, err := ioutil.ReadAll(resp.Body)
+	if err != nil {
+		log.Fatalln(err)
+	}
+
+	log.Println("verify result", string(body))
+}
+
 ```
