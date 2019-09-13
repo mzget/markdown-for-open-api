@@ -84,6 +84,10 @@ https://APIPORTALTEST.kasikornbank.com:12002/test/ssl
 ```javascript
 [GROUP][COPYABLE]
 ---[Node.js/javascript]---
+/*
+* Node.js v10.16.0
+* Author : nattapon.rat@kbtg.tech
+ */
 import * as request from 'request';
 import * as fs from 'fs';
 import * as path from 'path';
@@ -114,6 +118,10 @@ export function Request() {
 }
 
 ---[Go/go]---
+/*
+* go version go1.11.5 darwin/amd64
+* Author : nattapon.rat@kbtg.tech
+ */
 package main
 
 import (
