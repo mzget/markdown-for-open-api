@@ -1,4 +1,4 @@
-﻿# **QR Payment API**
+# **QR Payment API**
 
 ใช้เมื่อร้านค้าต้องการรับชำระเงินผ่าน Thai QR จากลูกค้า QR ที่สร้างขึ้นจะเป็น Dynamic QR (ร้านค้าสามารถกำหนดยอดเงินได้ แต่ลูกค้าไม่สามารถแก้ไขได้) โดย QR ที่สร้างขึ้นจะมีอายุ 10 นาที
 <br />
@@ -35,9 +35,9 @@ https://APIPORTALTEST.kasikornbank.com:12002/pos/qr_cancel
 
 **Example Request**
 
-```
+```bash
 [GROUP][COPYABLE]
----[cURL/curl]---
+---[cURL/bash]---
 curl -X POST \
   https://APIPORTALTEST.kasikornbank.com:12002/pos/qr_cancel \
   -H 'cache-control: no-cache' \
@@ -53,7 +53,7 @@ curl -X POST \
     "origPartnerTxnUid": "{{YOUR QR TXN ID}}"
   }'
 
----[node.js/nodejs]---
+---[Javascript/javascript]---
 var request = require("request");
 
 var options = {
