@@ -42,7 +42,7 @@ https://APIPORTALTEST.kasikornbank.com:12002/pos/qr_request
 
 **Example Request**
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[cURL/bash]---
 curl -X POST \
