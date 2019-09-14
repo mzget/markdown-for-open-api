@@ -44,7 +44,7 @@ https://APIPORTALTEST.kasikornbank.com:12002/pos/qr_request
 
 ```
 [GROUP][COPYABLE]
----[CURL/CURL]---
+---[cURL/bash]---
 curl -X POST \
   https://APIPORTALTEST.kasikornbank.com:12002/pos/qr_request \
   -H 'cache-control: no-cache' \
@@ -66,7 +66,7 @@ curl -X POST \
     "metadata":"ถุงผ้า 80.50, ดินสอ 20.00"
   }'
 
----[Node.js/Node.js]---
+---[Javascript/javascript]---
 var request = require("request");
 
 var options = { method: 'POST',
