@@ -14,7 +14,7 @@
 
 อัตราแลกเปลี่ยนต่างประเทศในสกุลบาท
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTALTEST.kasikornbank.com:12002/info/fxrate
@@ -22,15 +22,16 @@ https://APIPORTALTEST.kasikornbank.com:12002/info/fxrate
 
 **Example Request**
 
-```
+```bash
 [GROUP][COPYABLE]
-  ---[cURL/curl]---
+  ---[cURL/bash]---
 curl -X GET \
   https://APIPORTALTEST.kasikornbank.com:12002/info/fxrate \
   -H 'cache-control': 'no-cache' \
   -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
   -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
----[JS/javascript]---
+
+---[Javascript/javascript]---
 $.ajax({
   "url": "https://APIPORTALTEST.kasikornbank.com:12002/info/fxrate",
   "method": "GET",
