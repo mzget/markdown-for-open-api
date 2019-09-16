@@ -10,7 +10,7 @@ QR API is an API for merchant that want to accept payment via Thai QR. The QR co
 
 Cancel the unpaid QR Code. Cancel QR is used when someone generate the QR Code which is incorrect information such as amount.
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTALTEST.kasikornbank.com:12002/pos/qr_cancel

@@ -9,7 +9,7 @@
 
 ใช้กรณีที่ร้านค้าต้องการยกเลิกรายการที่ถูกชำระแล้วและคืนเงินให้กับลุกค้าของร้านค้า
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTALTEST.kasikornbank.com:12002/pos/void_payment

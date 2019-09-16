@@ -14,7 +14,7 @@ For 3 types of information:
 
 · Inquire the point balance of the credit card
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTALTEST.kasikornbank.com:12002/creditcard/point/inquiry
@@ -32,15 +32,16 @@ https://APIPORTALTEST.kasikornbank.com:12002/creditcard/point/inquiry
 
 **Example Request**
 
-```
+```bash
 [GROUP][COPYABLE]
----[cURL/curl]---
+---[cURL/bash]---
 curl -X POST \
   https://APIPORTALTEST.kasikornbank.com:12002/creditcard/point/inquiry \
   -H 'cache-control': 'no-cache' \
   -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
   -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
----[JS/javascript]---
+
+---[Javascript/javascript]---
 $.ajax({
   "url": "https://APIPORTALTEST.kasikornbank.com:12002/creditcard/point/inquiry",
   "method": "POST",

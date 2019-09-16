@@ -10,7 +10,7 @@ QR API is an API for merchant that want to accept payment via Thai QR. The QR co
 
 Inquiry QR Code Status Whether it is paid or not.
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTALTEST.kasikornbank.com:12002/pos/inquire_payment/v2
@@ -53,7 +53,7 @@ curl -X POST \
     "qrType": "3",
     "origPartnerTxnUid": "{{YOUR QR TXN ID}}"
   }'
-  
+
 ---[Javascript/javascript]---
 var request = require("request");
 

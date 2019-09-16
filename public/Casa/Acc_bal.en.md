@@ -6,7 +6,6 @@ For 2 types of information:
 2. Account Balance
 
 <br />
-<br />
 
 # Account Balance
 
@@ -15,7 +14,7 @@ For 2 types of information:
 · Display account balance of specified account no.
 · Support both savings accounts and current accounts
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTALTEST.kasikornbank.com:12002/deposit/sight/balance/1562567456
@@ -32,15 +31,16 @@ https://APIPORTALTEST.kasikornbank.com:12002/deposit/sight/balance/1562567456
 
 **Example Request**
 
-```
+```bash
 [GROUP][COPYABLE]
----[cURL/curl]---
+---[cURL/bash]---
 curl -X GET \
  https://APIPORTALTEST.kasikornbank.com:12002/deposit/sight/balance/{{YOUR PARAM}} \
   -H 'cache-control': 'no-cache' \
   -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
   -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
----[JS/javascript]---
+
+---[Javascript/javascript]---
 $.ajax({
   "url": "https://APIPORTALTEST.kasikornbank.com:12002/deposit/sight/balance/{{YOUR PARAM}}",
   "method": "GET",
