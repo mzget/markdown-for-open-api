@@ -1,6 +1,7 @@
-﻿# **QR Payment API**
+# **QR Payment API**
 
 QR API is an API for merchant that want to accept payment via Thai QR. The QR code generated from QR API is dynamic QR which merchant can fill the amount of money but customer can't edit. QR last for 10 minutes.
+
 <br />
 
 # Void Payment (Cancel Transaction)
@@ -35,9 +36,9 @@ https://APIPORTALTEST.kasikornbank.com:12002/pos/void_payment
 
 **Example Request**
 
-```
+```bash
 [GROUP][COPYABLE]
----[cURL/curl]---
+---[cURL/bash]---
 curl -X POST \
   https://APIPORTALTEST.kasikornbank.com:12002/pos/void_payment \
   -H 'cache-control: no-cache' \
@@ -53,7 +54,7 @@ curl -X POST \
     "origPartnerTxnUid": "{{YOUR QR TXN ID}}"
 }'
 
----[node.js/nodejs]---
+---[Javascript/javascript]---
 var request = require("request");
 
 var options = {
