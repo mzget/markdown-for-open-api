@@ -7,7 +7,6 @@
 3. รายการใช้จ่ายผ่านบัตรเครดิตที่ยังไม่ถึงรอบบิล
 
 <br />
-<br />
 
 # Credit Card Point Redemption
 
@@ -15,7 +14,7 @@
 
 · แต้มคะแนนแลกสินค้าของบัตรเครดิต
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTALTEST.kasikornbank.com:12002/creditcard/point/redemption
@@ -34,15 +33,16 @@ https://APIPORTALTEST.kasikornbank.com:12002/creditcard/point/redemption
 
 **Example Request**
 
-```
+```bash
 [GROUP][COPYABLE]
----[cURL/curl]---
+---[cURL/bash]---
 curl -X POST \
  https://APIPORTALTEST.kasikornbank.com:12002/creditcard/point/redemption \
   -H 'cache-control': 'no-cache' \
   -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
   -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
----[JS/javascript]---
+
+---[Javascript/javascript]---
 $.ajax({
   "url": "https://APIPORTALTEST.kasikornbank.com:12002/creditcard/point/redemption",
   "method": "POST",

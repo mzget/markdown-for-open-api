@@ -7,7 +7,6 @@
 3. รายการใช้จ่ายผ่านบัตรเครดิตที่ยังไม่ถึงรอบบิล
 
 <br />
-<br />
 
 # Credit Card Unbilled Transactions Inquiry
 
@@ -15,7 +14,7 @@
 
 · แสดงรายการใช้จ่ายผ่านบัตรเครดิต ที่ยังไม่ถึงรอบบิล
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTALTEST.kasikornbank.com:12002/creditcard/transactions/unbilled
@@ -33,15 +32,16 @@ https://APIPORTALTEST.kasikornbank.com:12002/creditcard/transactions/unbilled
 
 **Example Request**
 
-```
+```bash
 [GROUP][COPYABLE]
----[cURL/curl]---
+---[cURL/bash]---
 curl -X POST \
  https://APIPORTALTEST.kasikornbank.com:12002/creditcard/transactions/unbilled \
   -H 'cache-control': 'no-cache' \
   -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
   -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
----[JS/javascript]---
+
+---[Javascript/javascript]---
 $.ajax({
   "url": "https://APIPORTALTEST.kasikornbank.com:12002/creditcard/transactions/unbilled",
   "method": "POST",

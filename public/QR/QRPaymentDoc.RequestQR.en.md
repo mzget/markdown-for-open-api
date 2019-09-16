@@ -10,7 +10,7 @@ QR API is an API for merchant that want to accept payment via Thai QR. The QR co
 
 Generate dynamic QR Code for Thai QR Payment
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTALTEST.kasikornbank.com:12002/pos/qr_request

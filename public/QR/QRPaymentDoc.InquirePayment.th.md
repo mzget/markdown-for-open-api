@@ -10,7 +10,7 @@
 
 ใช้สำหรับตรวจสอบสถานะของ QR Code ที่สร้างขึ้นว่าจ่ายแล้วหรือไม่
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTALTEST.kasikornbank.com:12002/pos/inquire_payment/v2
@@ -53,7 +53,7 @@ curl -X POST \
     "qrType": "3",
     "origPartnerTxnUid": "{{YOUR QR TXN ID}}"
   }'
-  
+
 ---[Javascript/javascript]---
 var request = require("request");
 

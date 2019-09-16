@@ -9,7 +9,7 @@ QR API is an API for merchant that want to accept payment via Thai QR. The QR co
 
 When customer successfully payment based on the QR that is requested via QR API. We will send notification to the merchant. This API is not included in the webportal.
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://yourdomain.com/qr/payment-callback
@@ -38,17 +38,17 @@ https://yourdomain.com/qr/payment-callback
 
 ```json
 {
-    "partnerTxnUid": "QRH001030118001",
-    "partnerId": "POS001",
-    "statusCode": "00",
-    "errorCode": null,
-    "errorDesc": null,
-    "merchantId": "BEV06000080200",
-    "txnAmount": 100.5,
-    "txnCurrencyCode": "THB",
-    "loyaltyId": "00199100000",
-    "txnNo": "201802080035496",
-    "additionalInfo": "ข้อมูลประกอบอื่น ๆ"
+  "partnerTxnUid": "QRH001030118001",
+  "partnerId": "POS001",
+  "statusCode": "00",
+  "errorCode": null,
+  "errorDesc": null,
+  "merchantId": "BEV06000080200",
+  "txnAmount": 100.5,
+  "txnCurrencyCode": "THB",
+  "loyaltyId": "00199100000",
+  "txnNo": "201802080035496",
+  "additionalInfo": "ข้อมูลประกอบอื่น ๆ"
 }
 ```
 
@@ -69,8 +69,8 @@ https://yourdomain.com/qr/payment-callback
 
 ```json
 {
-    "statusCode": "00",
-    "errorCode": null,
-    "errorDesc": null
+  "statusCode": "00",
+  "errorCode": null,
+  "errorDesc": null
 }
 ```

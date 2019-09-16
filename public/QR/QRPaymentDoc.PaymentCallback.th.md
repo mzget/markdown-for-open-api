@@ -9,7 +9,7 @@
 
 เมื่อลูกค้าชำระเงินผ่านแอพลิเคชันเรียบร้อยแล้ว ทางเราจะส่ง Notification ไปยังร้านค้า (ไม่สามารถทดลองใช้ใน Webportal ได้)
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://yourdomain.com/qr/payment-callback
@@ -38,17 +38,17 @@ https://yourdomain.com/qr/payment-callback
 
 ```json
 {
-    "partnerTxnUid": "QRH001030118001",
-    "partnerId": "POS001",
-    "statusCode": "00",
-    "errorCode": null,
-    "errorDesc": null,
-    "merchantId": "BEV06000080200",
-    "txnAmount": 100.5,
-    "txnCurrencyCode": "THB",
-    "loyaltyId": "00199100000",
-    "txnNo": "201802080035496",
-    "additionalInfo": "ข้อมูลประกอบอื่น ๆ"
+  "partnerTxnUid": "QRH001030118001",
+  "partnerId": "POS001",
+  "statusCode": "00",
+  "errorCode": null,
+  "errorDesc": null,
+  "merchantId": "BEV06000080200",
+  "txnAmount": 100.5,
+  "txnCurrencyCode": "THB",
+  "loyaltyId": "00199100000",
+  "txnNo": "201802080035496",
+  "additionalInfo": "ข้อมูลประกอบอื่น ๆ"
 }
 ```
 
@@ -69,8 +69,8 @@ https://yourdomain.com/qr/payment-callback
 
 ```json
 {
-    "statusCode": "00",
-    "errorCode": null,
-    "errorDesc": null
+  "statusCode": "00",
+  "errorCode": null,
+  "errorDesc": null
 }
 ```

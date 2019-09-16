@@ -10,7 +10,7 @@
 
 สร้าง Thai QR เพื่อรับชำระเงินผ่านแอพลิเคชัน
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTALTEST.kasikornbank.com:12002/pos/qr_request
