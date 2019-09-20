@@ -1,6 +1,7 @@
-﻿# **QR Payment API**
+# **QR Payment API**
 
 ใช้เมื่อร้านค้าต้องการรับชำระเงินผ่าน Thai QR จากลูกค้า QR ที่สร้างขึ้นจะเป็น Dynamic QR (ร้านค้าสามารถกำหนดยอดเงินได้ แต่ลูกค้าไม่สามารถแก้ไขได้) โดย QR ที่สร้างขึ้นจะมีอายุ 10 นาที
+
 <br />
 
 # Inquire Payment (Transaction Status)
@@ -9,7 +10,7 @@
 
 ใช้สำหรับตรวจสอบสถานะของ QR Code ที่สร้างขึ้นว่าจ่ายแล้วหรือไม่
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTAL.kasikornbank.com:12002/pos/inquire_payment/v2
@@ -35,9 +36,9 @@ https://APIPORTAL.kasikornbank.com:12002/pos/inquire_payment/v2
 
 **Example Request**
 
-```
+```bash
 [GROUP][COPYABLE]
----[cURL/curl]---
+---[cURL/bash]---
 curl -X POST \
   https://APIPORTAL.kasikornbank.com:12002/pos/inquire_payment/v2 \
   -H 'cache-control: no-cache' \
@@ -52,7 +53,8 @@ curl -X POST \
     "qrType": "3",
     "origPartnerTxnUid": "{{YOUR QR TXN ID}}"
   }'
----[node.js/nodejs]---
+
+---[Javascript/javascript]---
 var request = require("request");
 
 var options = {

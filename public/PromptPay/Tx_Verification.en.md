@@ -5,7 +5,7 @@ Creditor bank (Receiving Bank) can verify payment transaction using unique refer
 
 This API can rectify on the problem where customer already paid or transfer money to Creditor bank but money does not been added to Creditor bank customer, Creditor bank customer can verify and ensure that he/she will receive money from customer definitely.
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTAL.kasikornbank.com:12002/promptpay/transactions?sendingBank={sendingBank}&transref={transRef}
@@ -13,15 +13,15 @@ https://APIPORTAL.kasikornbank.com:12002/promptpay/transactions?sendingBank={sen
 
 **Parameters**
 
-| Field                        | Data Type | Description                         | Example            | Mandatory |
-| ---------------------------- | --------- | ----------------------------------- | ------------------ | :-------: |
-| [colspan=5] Header parameter |
-| content-type                 | string    | Type of content as application/json | application/json   |     Y     |
-| Partner-Id                   | string    | Partner-Id                          |                    |     Y     |
-| Partner-Secret               | string    | Partner-Secret                      |                    |     Y     |
-| [colspan=5] query parameter  |
-| sendingBank                  | string    | sending bank                        | 004                |     Y     |
-| transref                     | string    | transaction reference               | 019182105907167129 |     Y     |
+| Field                         | Data Type | Description                                                                                              | Example            | Mandatory |
+| ----------------------------- | --------- | -------------------------------------------------------------------------------------------------------- | ------------------ | :-------: |
+| [colspan=5] Header parameters |
+| content-type                  | string    | Type of content as application/json                                                                      | application/json   |     Y     |
+| Partner-Id                    | string    | Partner-Id                                                                                               |                    |     Y     |
+| Partner-Secret                | string    | Partner-Secret                                                                                           |                    |     Y     |
+| [colspan=5] URL parameters    |
+| sendingBank                   | string    | sending bank                                                                                             | 004                |     Y     |
+| transref                      | string    | Transaction Reference Number<br>Contains Reference number of the transaction required to verify the pay. | 019182105907167129 |     Y     |
 
 <br />
 
@@ -49,15 +49,16 @@ https://APIPORTAL.kasikornbank.com:12002/promptpay/transactions?sendingBank={sen
 
 **Example Request**
 
-```
+```bash
 [GROUP][COPYABLE]
----[cURL/curl]---
+---[cURL/bash]---
 curl -X POST \
   https://APIPORTAL.kasikornbank.com:12002/promptpay/transactions?sendingBank={sendingBank}&transref={transRef} \
   -H 'cache-control': 'no-cache' \
   -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
   -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
----[JS/javascript]---
+
+---[Javascript/javascript]---
 $.ajax({
   "url": "https://APIPORTAL.kasikornbank.com:12002/promptpay/transactions?sendingBank={sendingBank}&transref={transRef}",
   "method": "POST",
@@ -73,32 +74,44 @@ $.ajax({
 
 ```json
 {
-    "transRef": "019182105907167129",
-    "sendingBank": "004",
-    "receivingBank": "069",
-    "transDate": "20190705",
-    "transTime": "08:12:36",
-    "sender": {
-        "displayName": "โพธิจันทร ธ",
-        "name": "PHOTICHANTHON P",
-        "account": {
-            "type": "BANKAC",
-            "value": "xxx-x-x7404-x"
-        }
+  "language": "TH",
+  "transRef": "019183135540904172",
+  "sendingBank": "004",
+  "receivingBank": "004",
+  "transDate": "20190702",
+  "transTime": "13:55:40",
+  "sender": {
+    "displayName": "ชิซูกะ ส",
+    "name": "CHICHUKA S",
+    "account": {
+      "type": "BANKAC",
+      "value": "xxx-x-x2295-x"
     },
-    "receiver": {
-        "displayName": "นาย คิทแคท ช",
-        "name": "MR. KITKAT G",
-        "account": {
-            "type": "BANKAC",
-            "value": "xxx-x-x7404-x"
-        }
+    "proxy": {
+      "type": null,
+      "value": null
+    }
+  },
+  "receiver": {
+    "displayName": "โนบิตะ ส",
+    "name": "NOBITA S",
+    "account": {
+      "type": "BANKAC",
+      "value": "xxx-x-x1411-x"
     },
-    "amount": 21.0,
-    "paidLocalAmount": 21.0,
-    "transFeeAmount": 0.0,
-    "ref1": null,
-    "ref2": null,
-    "ref3": null
+    "proxy": {
+      "type": "",
+      "value": ""
+    }
+  },
+  "amount": 10.04,
+  "paidLocalAmount": 10.04,
+  "paidLocalCurrency": "764",
+  "countryCode": "TH",
+  "transFeeAmount": 0,
+  "ref1": "",
+  "ref2": "",
+  "ref3": "",
+  "toMerchantId": ""
 }
 ```

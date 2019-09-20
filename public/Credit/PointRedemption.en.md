@@ -7,7 +7,6 @@ For 3 types of information:
 3. Credit Card Unbilled Transactions Inquiry
 
 <br />
-<br />
 
 # Credit Card Point Redemption
 
@@ -15,7 +14,7 @@ For 3 types of information:
 
 · Display the redemption point of the credit card
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTAL.kasikornbank.com:12002/creditcard/point/redemption
@@ -34,15 +33,16 @@ https://APIPORTAL.kasikornbank.com:12002/creditcard/point/redemption
 
 **Example Request**
 
-```
+```bash
 [GROUP][COPYABLE]
----[cURL/curl]---
+---[cURL/bash]---
 curl -X POST \
   https://APIPORTAL.kasikornbank.com:12002/creditcard/point/redemption \
   -H 'cache-control': 'no-cache' \
   -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
   -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
----[JS/javascript]---
+
+---[Javascript/javascript]---
 $.ajax({
   "url": "https://APIPORTAL.kasikornbank.com:12002/creditcard/point/redemption",
   "method": "POST",

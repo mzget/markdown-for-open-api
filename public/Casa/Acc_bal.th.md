@@ -6,7 +6,6 @@
 2. ยอดเงินของบัญชี
 
 <br />
-<br />
 
 # Account Balance
 
@@ -15,7 +14,7 @@
 · แสดงยอดจำนวนเงินของเลขที่บัญชีที่ระบุ
 · รองรับบัญชีประเภทเงินฝากออมทรัพย์ และกระแสรายวัน
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTAL.kasikornbank.com:12002/deposit/sight/balance/1562567456
@@ -32,15 +31,16 @@ https://APIPORTAL.kasikornbank.com:12002/deposit/sight/balance/1562567456
 
 **Example Request**
 
-```
+```bash
 [GROUP][COPYABLE]
----[cURL/curl]---
+---[cURL/bash]---
 curl -X GET \
  https://APIPORTAL.kasikornbank.com:12002/deposit/sight/balance/{{YOUR PARAM}} \
   -H 'cache-control': 'no-cache' \
   -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
   -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
----[JS/javascript]---
+
+---[Javascript/javascript]---
 $.ajax({
   "url": "https://APIPORTAL.kasikornbank.com:12002/deposit/sight/balance/{{YOUR PARAM}}",
   "method": "GET",

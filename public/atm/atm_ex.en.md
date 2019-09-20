@@ -5,8 +5,8 @@ For 3 types of KBank information:
 1. KBank ATM Location
 2. KBank Branch Location
 3. Exchange Rate
-   <br />
-   <br />
+
+<br />
 
 # KBank ATM Location
 
@@ -14,7 +14,7 @@ For 3 types of KBank information:
 
 Retrieve KBank ATM Location
 
-```
+```code
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTAL.kasikornbank.com:12002/info/atm/CDM04723
@@ -22,15 +22,16 @@ https://APIPORTAL.kasikornbank.com:12002/info/atm/CDM04723
 
 **Example Request**
 
-```
+```bash
 [GROUP][COPYABLE]
-  ---[cURL/curl]---
+  ---[cURL/bash]---
 curl -X GET \
   https://APIPORTAL.kasikornbank.com:12002/info/atm/CDM04723 \
   -H 'cache-control': 'no-cache' \
   -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
   -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
----[JS/javascript]---
+
+---[Javascript/javascript]---
 $.ajax({
   "url": "https://APIPORTAL.kasikornbank.com:12002/info/atm/CDM04723",
   "method": "GET",

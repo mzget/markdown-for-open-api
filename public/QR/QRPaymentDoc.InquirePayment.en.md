@@ -1,6 +1,7 @@
-﻿# **QR Payment API**
+# **QR Payment API**
 
 QR API is an API for merchant that want to accept payment via Thai QR. The QR code generated from QR API is dynamic QR which merchant can fill the amount of money but customer can't edit. QR last for 10 minutes.
+
 <br />
 
 # Inquire Payment (Transaction Status)
@@ -9,7 +10,7 @@ QR API is an API for merchant that want to accept payment via Thai QR. The QR co
 
 Inquiry QR Code Status Whether it is paid or not.
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTAL.kasikornbank.com:12002/pos/inquire_payment/v2
@@ -35,9 +36,9 @@ https://APIPORTAL.kasikornbank.com:12002/pos/inquire_payment/v2
 
 **Example Request**
 
-```
+```bash
 [GROUP][COPYABLE]
----[cURL/curl]---
+---[cURL/bash]---
 curl -X POST \
   https://APIPORTAL.kasikornbank.com:12002/pos/inquire_payment/v2 \
   -H 'cache-control: no-cache' \
@@ -52,7 +53,8 @@ curl -X POST \
     "qrType": "3",
     "origPartnerTxnUid": "{{YOUR QR TXN ID}}"
   }'
----[node.js/nodejs]---
+
+---[Javascript/javascript]---
 var request = require("request");
 
 var options = {

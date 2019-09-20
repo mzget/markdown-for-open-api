@@ -6,7 +6,6 @@
 2. ยอดเงินของบัญชี
 
 <br />
-<br />
 
 # Recent Account Activities
 
@@ -18,7 +17,7 @@
 
 · รองรับบัญชีประเภทเงินฝากออมทรัพย์ และกระแสรายวัน
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTAL.kasikornbank.com:12002/deposit/sight/transactions/1562567456
@@ -35,15 +34,16 @@ https://APIPORTAL.kasikornbank.com:12002/deposit/sight/transactions/1562567456
 
 **Example Request**
 
-```
+```bash
 [GROUP][COPYABLE]
----[cURL/curl]---
+---[cURL/bash]---
 curl -X GET \
  https://APIPORTAL.kasikornbank.com:12002/deposit/sight/transactions/{{YOUR PARAM}} \
   -H 'cache-control': 'no-cache' \
   -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
   -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
----[JS/javascript]---
+
+---[Javascript/javascript]---
 $.ajax({
   "url": "https://APIPORTAL.kasikornbank.com:12002/deposit/sight/transactions/{{YOUR PARAM}}",
   "method": "GET",

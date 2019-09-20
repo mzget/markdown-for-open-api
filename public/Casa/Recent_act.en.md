@@ -6,7 +6,6 @@ For 2 types of information:
 2. Account Balance
 
 <br />
-<br />
 
 # Recent Account Activities
 
@@ -16,7 +15,7 @@ For 2 types of information:
 · Able to display up to 200 transactions or up to last 3 months
 · Support both savings accounts and current accounts
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTAL.kasikornbank.com:12002/deposit/sight/transactions/1562567456
@@ -33,15 +32,16 @@ https://APIPORTAL.kasikornbank.com:12002/deposit/sight/transactions/1562567456
 
 **Example Request**
 
-```
+```bash
 [GROUP][COPYABLE]
----[cURL/curl]---
+---[cURL/bash]---
 curl -X GET \
  https://APIPORTAL.kasikornbank.com:12002/deposit/sight/transactions/{{YOUR PARAM}} \
   -H 'cache-control': 'no-cache' \
   -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
   -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
----[JS/javascript]---
+
+---[Javascript/javascript]---
 $.ajax({
   "url": "https://APIPORTAL.kasikornbank.com:12002/deposit/sight/transactions/{{YOUR PARAM}}",
   "method": "GET",

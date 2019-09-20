@@ -5,8 +5,8 @@
 1. ข้อมูลและที่ตั้งตู้ ATM ธนาคารกสิกรไทย
 2. ข้อมูลและที่ตั้งสาขาธนาคารกสิกรไทย
 3. อัตราแลกเปลี่ยนต่างประเทศ
-   <br />
-   <br />
+
+<br />
 
 # KBank ATM Location
 
@@ -14,7 +14,7 @@
 
 ค้นหาข้อมูลและที่ตั้งตู้ ATM ธนาคารกสิกรไทย
 
-```
+```code
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTAL.kasikornbank.com:12002/info/atm
@@ -22,15 +22,16 @@ https://APIPORTAL.kasikornbank.com:12002/info/atm
 
 **Example Request**
 
-```
+```bash
 [GROUP][COPYABLE]
----[cURL/curl]---
+---[cURL/bash]---
 curl -X GET \
   https://APIPORTAL.kasikornbank.com:12002/info/atm \
   -H 'cache-control': 'no-cache' \
   -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
   -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
----[JS/javascript]---
+
+---[Javascript/javascript]---
 $.ajax({
   "url": "https://APIPORTAL.kasikornbank.com:12002/info/atm",
   "method": "GET",

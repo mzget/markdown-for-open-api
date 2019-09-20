@@ -15,7 +15,7 @@ For 3 types of information:
 
 · Display unbilled transactions of the credit card
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTAL.kasikornbank.com:12002/creditcard/transactions/unbilled
@@ -33,15 +33,16 @@ https://APIPORTAL.kasikornbank.com:12002/creditcard/transactions/unbilled
 
 **Example Request**
 
-```
+```bash
 [GROUP][COPYABLE]
----[cURL/curl]---
+---[cURL/bash]---
 curl -X POST \
  https://APIPORTAL.kasikornbank.com:12002/creditcard/transactions/unbilled \
   -H 'cache-control': 'no-cache' \
   -H 'Partner-Id': '{{YOUR PARTNER ID}}' \
   -H 'Partner-Secret': '{{YOUR PARTNER SECRET}}'
----[JS/javascript]---
+
+---[Javascript/javascript]---
 $.ajax({
   "url": "https://APIPORTAL.kasikornbank.com:12002/creditcard/transactions/unbilled",
   "method": "POST",
