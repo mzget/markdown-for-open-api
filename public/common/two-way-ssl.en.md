@@ -27,7 +27,7 @@ To establish a Two-Way SSL (Mutual Authentication) connection, you must have the
 ```code
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
-https://APIPORTALTEST.kasikornbank.com:12002/test/ssl
+https://APIPORTAL.kasikornbank.com:12002/test/ssl
 ```
 
 **Parameters**
