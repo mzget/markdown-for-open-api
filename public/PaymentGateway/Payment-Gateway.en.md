@@ -161,15 +161,8 @@ curl -X POST \
 | source/object | varchar(10) | Object type Sample Data: "card" |
 | source/brand | varchar(10) | Card brand Sample Data: "MASTERCARD", "JCB", "VISA" etc. |
 | source/card_masking | varchar(16) | Masked card number Sample Data: "514950**\*\***9007" |
-source/issuer_bank
-varchar(56)
-Card issuer bank name
-Sample Data: "Kasikornbank Public Limited"
-created
-varchar(17)
-Creation date of the charge  
-Format: YYYYMMDDHHmmSS
-Sample Data: "20180322121944000"
+|source/issuer_bank | varchar(56)| Card issuer bank name Sample Data: "Kasikornbank Public Limited" |
+| created | varchar(17) | Creation date of the charge<br/>Format: YYYYMMDDHHmmSS<br/>Sample Data: "20180322121944000" |
 status
 varchar
 Whether the charge is authorized or not  
