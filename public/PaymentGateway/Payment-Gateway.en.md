@@ -141,7 +141,7 @@ curl -X POST \
   "failure_code": "",
   "failure_message": "",
   "redirect_url": ""
-  "settlement_info":"",
+  "settlement_info": "",
   "refund_info": ""
 }
 ```
