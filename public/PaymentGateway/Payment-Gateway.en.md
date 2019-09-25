@@ -140,7 +140,7 @@ curl -X POST \
   "metadata": {},
   "failure_code": "",
   "failure_message": "",
-  "redirect_url": ""
+  "redirect_url": "",
   "settlement_info": "",
   "refund_info": ""
 }
