@@ -101,7 +101,7 @@ _A Token created with this method expire after 10 minutes, or after one operatio
 
 The following example applies for credit card payments using a Payment UI at token.
 
-**Sample Request**
+*Sample Request*
 
 ```bash
 curl -X POST \
@@ -117,7 +117,7 @@ curl -X POST \
   https://dev-kpaymentgateway-services.kasikornbank.com/card/v2/charge
 ```
 
-**Sample response**
+*Sample response*
 
 ```json
 {
