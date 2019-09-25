@@ -156,27 +156,11 @@ curl -X POST \
 | object            | String        | Object type Data. Sample Data: "charge"                               |
 | amount            | Decimal(12,2) | The amount charged in currency unit. Sample Data: 200.50              |
 | currency          | varchar(50)   | 3 Letter ISO Currency code in upper caseSample Data: "THB", "JPY" etc |
-| transaction_state | varchar(50)   | The status of payment transaction. <br/>                              |
-
-**Authorized** - Completely, authorize process with issue bank and Acquiring bank are captured a customer balance for purchase.
-<br>
-**Declined** - Authorize process with issue bank. It not unsuccessful and reject payment.
-<br>
-**Reversed** - Pre-Authorized - Payment need to do authentication 3D secure |
-
-| source/id | varchar(50) | Card object ID Sample Data: "card_test_42f00571ac396ad600ce8e72b0e58def1" |
-source/object
-varchar(10)
-Object type
-Sample Data: "card"
-source/brand
-varchar(10)
-Card brand
-Sample Data: "MASTERCARD", "JCB", "VISA" etc.
-source/card_masking
-varchar(16)
-Masked card number
-Sample Data: "514950**\*\***9007"
+| transaction_state | varchar(50)   | The status of payment transaction. <br/>**Authorized** - Completely, authorize process with issue bank and Acquiring bank are captured a customer balance for purchase.<br/>**Declined** - Authorize process with issue bank. It not unsuccessful and reject payment.<br/>**Reversed** - Pre-Authorized - Payment need to do authentication 3D secure |
+| source/id | varchar(50) | Card object ID Sample Data:"card_test_42f00571ac396ad600ce8e72b0e58def1" |
+| source/object | varchar(10) | Object type Sample Data: "card" |
+| source/brand | varchar(10) | Card brand Sample Data: "MASTERCARD", "JCB", "VISA" etc. |
+| source/card_masking | varchar(16) | Masked card number Sample Data: "514950**\*\***9007" |
 source/issuer_bank
 varchar(56)
 Card issuer bank name
