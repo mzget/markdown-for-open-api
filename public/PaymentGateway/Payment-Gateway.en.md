@@ -157,11 +157,11 @@ curl -X POST \
 | amount            | Decimal(12,2) | The amount charged in currency unit.<br/>Sample Data: 200.50              |
 | currency          | varchar(50)   | 3 Letter ISO Currency code in upper case.<br/>Sample Data: "THB", "JPY" etc |
 | transaction_state | varchar(50)   | The status of payment transaction. <br/>**Authorized** - Completely, authorize process with issue bank and Acquiring bank are captured a customer balance for purchase.<br/>**Declined** - Authorize process with issue bank. It not unsuccessful and reject payment.<br/>**Reversed** - Pre-Authorized - Payment need to do authentication 3D secure |
-| source/id | varchar(50) | Card object ID Sample Data:"card_test_42f00571ac396ad600ce8e72b0e58def1" |
+| source/id | varchar(50) | Card object ID<br/>Sample Data:"card_test_42f00571ac396ad600ce8e72b0e58def1" |
 | source/object | varchar(10) | Object type<br/>Sample Data: "card" |
 | source/brand | varchar(10) | Card brand<br/>Sample Data: "MASTERCARD", "JCB", "VISA" etc. |
-| source/card_masking | varchar(16) | Masked card number Sample Data: "514950xxxxxx9007" |
-|source/issuer_bank | varchar(56)| Card issuer bank name Sample Data: "Kasikornbank Public Limited" |
+| source/card_masking | varchar(16) | Masked card number<br/>Sample Data: "514950xxxxxx9007" |
+|source/issuer_bank | varchar(56)| Card issuer bank name<br/>Sample Data: "Kasikornbank Public Limited" |
 | created | varchar(17) | Creation date of the charge<br/>Format: YYYYMMDDHHmmSS<br/>Sample Data: "20180322121944000" |
 | status | varchar | Whether the charge is authorized or not<br/>Sample Data: "status": "success" |
 |livemode | Boolean | Whether this is live environment (true) or not (false)<br/>Sample Data: "livemode": true |
