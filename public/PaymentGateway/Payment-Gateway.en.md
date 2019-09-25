@@ -88,15 +88,120 @@ Also, the data attributes that you can config with KPay.js which support collect
 | **data-currency** (Optional)       | String(3)     | Currency unit (Default is THB) Sample Data: **data-currency="THB"**                        |
 | **data-description** (Optional)    | String(255)   | Product description Sample Data: **data-description="Awesome Shoe and Bag"**               |
 
-**2. Create a token to securely transmit card information.**
+**2. Receive a token to securely transmit card information.**
 
-After the customers submit card information’s with Payment UI **TBC**
+When the customers submit card information’s with Payment UI. Their data will be sent and collected at K-Payment backend and then be converted into a token. This step is submitted by JavaScript. (KPay.js)
 
 **3. Submit the token and the rest of your form to your server.**
 
-The last step is to submit the token, along with any additional information that has been collected, to your server. **TBC**
+The last step to make credit/debit card payments, First you need to create the POST request method requests that a web server accepts the data from step 2 and then passing parameters to API with a secret key to complete payment.
+_A Token created with this method expire after 10 minutes, or after one operation with that token is made._
 
-<strong>2.4. Verify case (Only success)</strong> - **TBC**
+**4. Pay with Payment UI.**
 
-1. Verify Charge Object (Credit Card)
-2. Verify Charge Object (Thai QR)
+The following example applies for credit card payments using a Payment UI at token.
+
+**Sample Request**
+
+```bash
+curl -X POST \
+  -H 'Content-Type: application/json' \
+  -H 'x-api-key : skey_test_41Bbw6At8dJjVyKV3ZaXghhLpRro5oAtR' \
+  -d '{	"amount": 200.50,
+  "currency": "THB",
+  "description": "TESTPRODUCT",
+  "source_type": "card",
+  "mode": "token",
+  "token": "tokn_test_1fadeb16520513a076c2d97df3b0841f9",
+  "reference_order" : "20180530175600" }' \
+  https://dev-kpaymentgateway-services.kasikornbank.com/card/v2/charge
+```
+
+**Sample response**
+
+```json
+{
+  "id": "chrg_prod_47b66904ca59846c6be83cf444870a2f2",
+  "object": "charge",
+  "amount": 15,
+  "currency": "USD",
+  "transaction_state": "Auhtorized",
+  "source": {
+    "id": "card_test_42f00571ac396ad600ce8e72b0e58def1",
+    "object": "card",
+    "brand": "MASTERCARD",
+    "last4": "514950******9007",
+    "issuer_bank": "Kasikornbank Public Limited"
+  },
+  "created": "20180322121944000",
+  "status": "success",
+  "approval_code": "764253",
+  "livemode": "false",
+  "metadata": {},
+  "failure_code": "",
+  "failure_message": "",
+  "redirect_url": ""
+  "settlement_info":"",
+  "refund_info": ""
+}
+```
+
+<strong>2.4. For Open API(Sandbox), Verify case (Only success)</strong>
+
+    1. Verify Response Object (Credit Card & Thai QR)
+
+| Attitude Name     | Data type     | Description                                                           |
+| ----------------- | ------------- | --------------------------------------------------------------------- |
+| id                | varchar(100)  | Charge ID Data. Sample Data: "chrg_test_12345678"                     |
+| object            | String        | Object type Data. Sample Data: "charge"                               |
+| amount            | Decimal(12,2) | The amount charged in currency unit. Sample Data: 200.50              |
+| currency          | varchar(50)   | 3 Letter ISO Currency code in upper caseSample Data: "THB", "JPY" etc |
+| transaction_state | varchar(50)   | The status of payment transaction. <br/>                              |
+
+**Authorized** - Completely, authorize process with issue bank and Acquiring bank are captured a customer balance for purchase.
+<br>
+**Declined** - Authorize process with issue bank. It not unsuccessful and reject payment.
+<br>
+**Reversed** - Pre-Authorized - Payment need to do authentication 3D secure |
+
+| source/id | varchar(50) | Card object ID Sample Data: "card_test_42f00571ac396ad600ce8e72b0e58def1" |
+source/object
+varchar(10)
+Object type
+Sample Data: "card"
+source/brand
+varchar(10)
+Card brand
+Sample Data: "MASTERCARD", "JCB", "VISA" etc.
+source/card_masking
+varchar(16)
+Masked card number
+Sample Data: "514950**\*\***9007"
+source/issuer_bank
+varchar(56)
+Card issuer bank name
+Sample Data: "Kasikornbank Public Limited"
+created
+varchar(17)
+Creation date of the charge  
+Format: YYYYMMDDHHmmSS
+Sample Data: "20180322121944000"
+status
+varchar
+Whether the charge is authorized or not  
+Sample Data: "status": "success"
+livemode
+Boolean
+Whether this is live environment (true) or not (false)
+Sample Data: "livemode": true
+approval_code
+varchar(20)
+Authorization’s approval code from Issuer
+Data Type: String (20)
+Sample Data: "approval_code": "123456"
+failure_code
+varchar(256)
+Failure code returned when there is an error
+failure_message
+varchar(256)
+Failure description returned when there is an error
