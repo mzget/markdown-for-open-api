@@ -80,13 +80,13 @@ Also, the data attributes that you can config with KPay.js which support collect
 
 | Data Attributes                    | Type          | Description                                                                                |
 | ---------------------------------- | ------------- | ------------------------------------------------------------------------------------------ |
-| **data-apikey** (Required)         | String(50)    | The public key of authentication Sample Data: **data-apikey="pkey_test_1234567890123456"** |
-| **data-amount** (Required)         | Decimal(10,2) | Amount Sample Data: **data-amount="1000.50"**                                              |
-| **data-paymentmethods** (Required) | String        | Payment method must be card, qr and redirect. Sample Data: **data-payment-methods="card"** |
-| **data-name** (Optional)           | (Optional)    | Your shop name Sample Data: **data-name="Awesome Shop"**                                   |
-| **data-mid** (Optional)            | String(15)    | Your merchant ID Sample Data: **data-mid="444123456789001"**                               |
-| **data-currency** (Optional)       | String(3)     | Currency unit (Default is THB) Sample Data: **data-currency="THB"**                        |
-| **data-description** (Optional)    | String(255)   | Product description Sample Data: **data-description="Awesome Shoe and Bag"**               |
+| **data-apikey** (Required)         | String(50)    | The public key of authentication<br/>Sample Data: **data-apikey="pkey_test_1234567890123456"** |
+| **data-amount** (Required)         | Decimal(10,2) | Amount<br/>Sample Data: **data-amount="1000.50"**                                              |
+| **data-paymentmethods** (Required) | String        | Payment method must be card, qr and redirect.<br/>Sample Data: **data-payment-methods="card"** |
+| **data-name** (Optional)           | (Optional)    | Your shop name<br/>Sample Data: **data-name="Awesome Shop"**                                   |
+| **data-mid** (Optional)            | String(15)    | Your merchant ID<br/>Sample Data: **data-mid="444123456789001"**                               |
+| **data-currency** (Optional)       | String(3)     | Currency unit (Default is THB)<br/>Sample Data: **data-currency="THB"**                        |
+| **data-description** (Optional)    | String(255)   | Product description<br/>Sample Data: **data-description="Awesome Shoe and Bag"**               |
 
 **2. Receive a token to securely transmit card information.**
 
