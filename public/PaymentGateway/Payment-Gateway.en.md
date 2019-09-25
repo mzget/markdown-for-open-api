@@ -148,7 +148,8 @@ curl -X POST \
 
 <strong>2.4. For Open API(Sandbox), Verify case (Only success)</strong>
 
-   1. Verify Response Object (Credit Card & Thai QR)
+ 1. Verify Response Object (Credit Card & Thai QR)
+   
 
 | Attitude Name     | Data type     | Description                                                           |
 | ----------------- | ------------- | --------------------------------------------------------------------- |
