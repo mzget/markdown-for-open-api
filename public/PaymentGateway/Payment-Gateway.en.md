@@ -163,22 +163,8 @@ curl -X POST \
 | source/card_masking | varchar(16) | Masked card number Sample Data: "514950xxxxxx9007" |
 |source/issuer_bank | varchar(56)| Card issuer bank name Sample Data: "Kasikornbank Public Limited" |
 | created | varchar(17) | Creation date of the charge<br/>Format: YYYYMMDDHHmmSS<br/>Sample Data: "20180322121944000" |
-status
-varchar
-Whether the charge is authorized or not  
-Sample Data: "status": "success"
-livemode
-Boolean
-Whether this is live environment (true) or not (false)
-Sample Data: "livemode": true
-approval_code
-varchar(20)
-Authorization’s approval code from Issuer
-Data Type: String (20)
-Sample Data: "approval_code": "123456"
-failure_code
-varchar(256)
-Failure code returned when there is an error
-failure_message
-varchar(256)
-Failure description returned when there is an error
+| status | varchar | Whether the charge is authorized or not<br/>Sample Data: "status": "success" |
+|livemode | Boolean | Whether this is live environment (true) or not (false)<br/>Sample Data: "livemode": true |
+| approval_code | varchar(20) | Authorization’s approval code from Issuer<br/>Data Type: String (20)<br/>Sample Data: "approval_code": "123456" | 
+| failure_code | varchar(256) | Failure code returned when there is an error|
+| failure_message | varchar(256) |Failure description returned when there is an error |
