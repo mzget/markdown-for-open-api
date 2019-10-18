@@ -38,7 +38,9 @@ https://APIPORTALTEST.kasikornbank.com:12002/card/v2/charge
 
 ---
 
+
 **Pay with Payment UI.**
+
 The following example applies for credit card payments using a Payment UI at token.
 
 _Sample Request_
@@ -86,7 +88,8 @@ _Sample response_
 }
 ```
 
-## Sample code for submit token to charge API
+
+### Sample code for submit token to charge API
 
 ```typescript
 [GROUP][COPYABLE]
