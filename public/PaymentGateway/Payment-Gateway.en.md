@@ -59,7 +59,8 @@ Creating a custom payment form with K-Payment UI requires three steps.
 For testing purposes, you have to include this script into your checkout page. It will automatically create payment form into your page and display a “Pay Now” button. To determine where to insert the script, we recommend you placing empty `<div>` elements with unique IDs in your checkout page.
 
 ```html
-[GROUP][COPYABLE] ---[HTML/html]---
+[GROUP][COPYABLE] 
+---[HTML/html]---
 <form method="POST" action="/api/checkout">
   <script
     type="text/javascript"
@@ -119,7 +120,8 @@ When the customers submit card information’s with Payment UI. Their data will 
 **3. Submit the token and the rest of your form to your server.**
 
 The last step to make credit/debit card payments, First you need to create the POST request method requests that a web server accepts the data from step 2 and then passing parameters to API with a secret key to complete payment.
-_A Token created with this method expire after 10 minutes, or after one operation with that token is made._
+
+> _A Token created with this method expire after 10 minutes, or after one operation with that token is made._
 
 ```typescript
 [GROUP][COPYABLE]
@@ -128,8 +130,6 @@ _A Token created with this method expire after 10 minutes, or after one operatio
 import { NextApiRequest, NextApiResponse } from "next";
 import { fetch } from "cross-fetch";
 
-const apikey = "pkey_prod_5BpmBr5LpqG84jYnDLPQe3Zv1OuhdN5dg";
-let chargeEndpoint = "https://apiportal.kasikornbank.com:12002/card/v2/charge";
 type AcceptBody = {
   apikey: string;
   amount: string;
@@ -143,6 +143,9 @@ type AcceptBody = {
   saveCard: true;
   token: string;
 };
+
+const apikey = "pkey_prod_5BpmBr5LpqG84jYnDLPQe3Zv1OuhdN5dg";
+let chargeEndpoint = "https://apiportal.kasikornbank.com:12002/card/v2/charge";
 async function Checkout(req: NextApiRequest, res: NextApiResponse) {
   let { method } = req;
   let body: AcceptBody = req.body;
