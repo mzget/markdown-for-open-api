@@ -72,7 +72,7 @@ For testing purposes, you have to include this script into your checkout page. I
   ></script>
 </form>
 
----[React/react]---
+---[React/tsx]---
 import React, { useEffect } from "react";
 import KPayment from "react-kpayment";
 
@@ -92,7 +92,7 @@ export function CardPayment(props: any) {
       paymentMethods: "card",
       shopName: "Your Shop Name", }} />
     </React.Fragment>
-      )
+  )
 }
 ```
 
