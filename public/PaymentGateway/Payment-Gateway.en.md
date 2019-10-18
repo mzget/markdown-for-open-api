@@ -80,12 +80,19 @@ export function CardPayment(props: any) {
   return (
     <React.Fragment>
       <p>Credit/Debit Card</p>
-      <KPayment formAction="/api/checkout" onFinish={onFinish} onProcess={onProcess}
-      debug={true} attrs={{ scriptUrl:
-      "https://uat-kpaymentgateway.new-kpgw.com/ui/v2/kpayment.min.js", apiKey:
-      "pkey_prod_5BpmBr5LpqG84jYnDLPQe3Zv1OuhdN5dg", amount: pokemon.price,
-      currency: "THB", paymentMethods: "card", shopName: "The Pokemon Shop", }} /> </React.Fragment
-    >)
+      <KPayment
+      formAction="/api/checkout"
+      onFinish={onFinish}
+      onProcess={onProcess}
+      debug={true}
+      attrs={{ scriptUrl: "https://uat-kpaymentgateway.new-kpgw.com/ui/v2/kpayment.min.js",
+      apiKey:"pkey_prod_5BpmBr5LpqG84jYnDLPQe3Zv1OuhdN5dg",
+      amount: "74.00",
+      currency: "THB",
+      paymentMethods: "card",
+      shopName: "Your Shop Name", }} />
+    </React.Fragment>
+      )
 }
 ```
 
