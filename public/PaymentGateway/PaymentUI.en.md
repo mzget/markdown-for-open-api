@@ -1,9 +1,8 @@
-# Integrating Payment UI
+# Integrating Payment UI (KPay.js)
+
+---
 
 **Description**
-
-
-<strong>KPay.js</strong>
 
 KPay.js is JavaScript library which helps to set a pre-built UI component for building your checkout flow and secure card data by sending sensitive details from the customer's browser directly to the KBank server.
 
