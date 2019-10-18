@@ -58,6 +58,7 @@ Creating a custom payment form with K-Payment UI requires three steps.
 
 For testing purposes, you have to include this script into your checkout page. It will automatically create payment form into your page and display a “Pay Now” button. To determine where to insert the script, we recommend you placing empty `<div>` elements with unique IDs in your checkout page.
 
+**Sample code for payment UI integration**
 ```html
 [GROUP][COPYABLE] 
 ---[HTML/html]---
@@ -121,7 +122,59 @@ When the customers submit card information’s with Payment UI. Their data will 
 
 The last step to make credit/debit card payments, First you need to create the POST request method requests that a web server accepts the data from step 2 and then passing parameters to API with a secret key to complete payment.
 
-> _A Token created with this method expire after 10 minutes, or after one operation with that token is made._
+> <strong>_A Token created with this method expire after 10 minutes, or after one operation with that token is made._</strong>
+
+
+**4. Pay with Payment UI.**
+
+The following example applies for credit card payments using a Payment UI at token.
+
+_Sample Request_
+
+```bash
+curl -X POST \
+  -H 'Content-Type: application/json' \
+  -H 'x-api-key : skey_test_41Bbw6At8dJjVyKV3ZaXghhLpRro5oAtR' \
+  -d '{	"amount": 200.50,
+  "currency": "THB",
+  "description": "TESTPRODUCT",
+  "source_type": "card",
+  "mode": "token",
+  "token": "pkey_prod_5BpmBr5LpqG84jYnDLPQe3Zv1OuhdN5dg",
+  "reference_order" : "20180530175600" }' \
+  https://apiportal.kasikornbank.com:12002/card/v2/charge
+```
+
+_Sample response_
+
+```json
+{
+  "id": "chrg_prod_47b66904ca59846c6be83cf444870a2f2",
+  "object": "charge",
+  "amount": 15,
+  "currency": "USD",
+  "transaction_state": "Auhtorized",
+  "source": {
+    "id": "card_test_42f00571ac396ad600ce8e72b0e58def1",
+    "object": "card",
+    "brand": "MASTERCARD",
+    "last4": "514950******9007",
+    "issuer_bank": "Kasikornbank Public Limited"
+  },
+  "created": "20180322121944000",
+  "status": "success",
+  "approval_code": "764253",
+  "livemode": "false",
+  "metadata": {},
+  "failure_code": "",
+  "failure_message": "",
+  "redirect_url": "",
+  "settlement_info": "",
+  "refund_info": ""
+}
+```
+
+**Sample code for submit token to charge API**
 
 ```typescript
 [GROUP][COPYABLE]
@@ -191,56 +244,7 @@ export default Checkout;
 
 ```
 
-**4. Pay with Payment UI.**
-
-The following example applies for credit card payments using a Payment UI at token.
-
-_Sample Request_
-
-```bash
-curl -X POST \
-  -H 'Content-Type: application/json' \
-  -H 'x-api-key : skey_test_41Bbw6At8dJjVyKV3ZaXghhLpRro5oAtR' \
-  -d '{	"amount": 200.50,
-  "currency": "THB",
-  "description": "TESTPRODUCT",
-  "source_type": "card",
-  "mode": "token",
-  "token": "tokn_test_1fadeb16520513a076c2d97df3b0841f9",
-  "reference_order" : "20180530175600" }' \
-  https://dev-kpaymentgateway-services.kasikornbank.com/card/v2/charge
-```
-
-_Sample response_
-
-```json
-{
-  "id": "chrg_prod_47b66904ca59846c6be83cf444870a2f2",
-  "object": "charge",
-  "amount": 15,
-  "currency": "USD",
-  "transaction_state": "Auhtorized",
-  "source": {
-    "id": "card_test_42f00571ac396ad600ce8e72b0e58def1",
-    "object": "card",
-    "brand": "MASTERCARD",
-    "last4": "514950******9007",
-    "issuer_bank": "Kasikornbank Public Limited"
-  },
-  "created": "20180322121944000",
-  "status": "success",
-  "approval_code": "764253",
-  "livemode": "false",
-  "metadata": {},
-  "failure_code": "",
-  "failure_message": "",
-  "redirect_url": "",
-  "settlement_info": "",
-  "refund_info": ""
-}
-```
-
-<strong>2.4. For Open API(Sandbox), Verify case (Only success)</strong>
+<strong>2.4. For Open API (Sandbox), Verify case (Only success)</strong>
 
 1.  Verify Response Object (Credit Card & Thai QR)
 
