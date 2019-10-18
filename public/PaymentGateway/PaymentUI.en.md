@@ -6,7 +6,7 @@
 
 KPay.js is JavaScript library which helps to set a pre-built UI component for building your checkout flow and secure card data by sending sensitive details from the customer's browser directly to the KBank server.
 
-<strong>Setup Guide</strong>
+### Setup Guide
 
 Creating a custom payment form with K-Payment UI requires three steps.
 
@@ -14,7 +14,7 @@ Creating a custom payment form with K-Payment UI requires three steps.
 
 For testing purposes, you have to include this script into your checkout page. It will automatically create payment form into your page and display a “Pay Now” button. To determine where to insert the script, we recommend you placing empty `<div>` elements with unique IDs in your checkout page.
 
-### Sample code for payment UI integration
+**Sample code for payment UI integration**
 
 ```html
 [GROUP][COPYABLE] 

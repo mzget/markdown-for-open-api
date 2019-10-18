@@ -36,8 +36,7 @@ https://APIPORTALTEST.kasikornbank.com:12002/card/v2/charge
 | failure_code        | varchar(256)  | Failure code returned when there is an error                                                                                                                                                                                                                                                                                                          |
 | failure_message     | varchar(256)  | Failure description returned when there is an error                                                                                                                                                                                                                                                                                                   |
 
----
-
+<br/>
 
 **Pay with Payment UI.**
 
@@ -88,8 +87,9 @@ _Sample response_
 }
 ```
 
+<br/>
 
-### Sample code for submit token to charge API
+**Sample code for submit token to charge API**
 
 ```typescript
 [GROUP][COPYABLE]
