@@ -1,5 +1,7 @@
 # Verify Token With Charge API
 
+---
+
 **Description**
 
 
@@ -9,6 +11,7 @@
 https://APIPORTALTEST.kasikornbank.com:12002/card/v2/charge
 ```
 
+---
 
 <strong>For Open API (Sandbox), Verify case (Only success)</strong>
 
@@ -83,7 +86,7 @@ _Sample response_
 }
 ```
 
-**Sample code for submit token to charge API**
+## Sample code for submit token to charge API
 
 ```typescript
 [GROUP][COPYABLE]
