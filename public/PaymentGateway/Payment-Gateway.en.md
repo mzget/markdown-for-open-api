@@ -60,7 +60,7 @@ For testing purposes, you have to include this script into your checkout page. I
 
 ```html
 [GROUP][COPYABLE] ---[HTML/html]---
-<form method="POST" action="/checkout">
+<form method="POST" action="/api/checkout">
   <script
     type="text/javascript"
     src="https://uat-kpaymentgateway.new-kpgw.com/ui/v2/kpayment.min.js"
