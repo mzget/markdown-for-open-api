@@ -72,7 +72,7 @@ For testing purposes, you have to include this script into your checkout page. I
   ></script>
 </form>
 
----[React/javascript]---
+---[React/react]---
 import React, { useEffect } from "react";
 import KPayment from "react-kpayment";
 
@@ -85,7 +85,7 @@ export function CardPayment(props: any) {
       "https://uat-kpaymentgateway.new-kpgw.com/ui/v2/kpayment.min.js", apiKey:
       "pkey_prod_5BpmBr5LpqG84jYnDLPQe3Zv1OuhdN5dg", amount: pokemon.price,
       currency: "THB", paymentMethods: "card", shopName: "The Pokemon Shop", }} /> </React.Fragment
-    >) 
+    >)
 }
 ```
 
