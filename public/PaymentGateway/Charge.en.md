@@ -4,7 +4,6 @@
 
 **Description**
 
-
 ```
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
@@ -98,22 +97,18 @@ _Sample response_
 import { NextApiRequest, NextApiResponse } from "next";
 import { fetch } from "cross-fetch";
 
+const apikey = "pkey_prod_5BpmBr5LpqG84jYnDLPQe3Zv1OuhdN5dg";
+let chargeEndpoint = "https://apiportal.kasikornbank.com:12002/card/v2/charge";
+
 type AcceptBody = {
-  apikey: string;
   amount: string;
   currency: string;
-  source_type: string;
-  mode: string;
-  token: string;
-  reference_order: string;
 } & {
   paymentMethods: string;
   saveCard: true;
   token: string;
 };
 
-const apikey = "pkey_prod_5BpmBr5LpqG84jYnDLPQe3Zv1OuhdN5dg";
-let chargeEndpoint = "https://apiportal.kasikornbank.com:12002/card/v2/charge";
 async function Checkout(req: NextApiRequest, res: NextApiResponse) {
   let { method } = req;
   let body: AcceptBody = req.body;
@@ -151,7 +146,7 @@ async function Checkout(req: NextApiRequest, res: NextApiResponse) {
       }
       break;
     default:
-      res.setHeader("Allow", ["GET", "POST"]);
+      res.setHeader("Allow", ["POST"]);
       res.status(405).end(`Method ${method} Not Allowed`);
   }
 }
