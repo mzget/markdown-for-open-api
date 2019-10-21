@@ -45,3 +45,16 @@ Which type of credit card that you need to enable the 3D Secure payment?
 - Visa Card
 - Master Card
 - JCB Card
+
+---
+
+## Fraud Protection
+
+**tokenization**
+
+K-Payment Gateway provide payment UI library for create one time use token that you use on your backend server to perform card operations. This way every card processed with us goes through tokenization.  
+
+**3D Secure Card Payments**
+
+3D Secure provides a layer of protection against fraudulent payments that is supported by most card issuers.
+Unlike regular card payments, 3D Secure requires cardholders to complete an additional verification step with the issuer. Typically, this involves showing the customer an authentication page on their bank’s website, where they are prompted to enter a password associated with the card or a verification code sent to their phone. This process is familiar to customers through the card networks’ brand names, such as Visa Secure and Mastercard Identity Check.
