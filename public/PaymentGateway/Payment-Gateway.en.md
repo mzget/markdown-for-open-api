@@ -50,7 +50,7 @@ Which type of credit card that you need to enable the 3D Secure payment?
 
 ## Fraud Protection
 
-**tokenization**
+**Tokenization**
 
 K-Payment Gateway provide payment UI library for create one time use token that you use on your backend server to perform card operations. This way every card processed with us goes through tokenization.  
 
