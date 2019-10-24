@@ -2,7 +2,10 @@
 
 ---
 
-**Description**
+### Description
+
+After you collect data and tokenize your customer’s credit card, you can charge the card immediately.
+Unlike tokenization, which occurs in the browser, charge attempts are made from your server.
 
 ```
 [GROUP][COPYABLE]
