@@ -11,10 +11,10 @@ K-Payment Gateway provided by the KASIKORNBANK Public Company Limited (hereinaft
 <strong>Customer Journey</strong>
 
 1. Card Payment
-   <img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2FCard_Payment.png?alt=media&token=2d60b4ce-b991-4bb5-977a-fb6c4f6939bc" width="100%" alt="Card Payment" />
+   <img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2FCard_Payment.jpg?alt=media&token=edf5db68-a2e7-4573-99ef-82f1fa5a2f0a" width="100%" alt="Card Payment" />
 
 2. QR Payment
-   <img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2FQR_Payment.png?alt=media&token=d088ebcc-22ac-4e8b-87d4-8c8e59ca9b80" width="100%" alt="QR Payment">
+   <img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2FQR_Payment.jpg?alt=media&token=4052bd88-c6da-47b3-8924-0857eec9643b" width="100%" alt="QR Payment">
 
 ---
 
@@ -52,9 +52,17 @@ Which type of credit card that you need to enable the 3D Secure payment?
 
 **Tokenization**
 
-K-Payment Gateway provide payment UI library for create one time use token that you use on your backend server to perform card operations. This way every card processed with us goes through tokenization.  
+K-Payment Gateway provide payment UI library for create one time use token that you use on your backend server to perform card operations. This way every card processed with us goes through tokenization.
+
+   <img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2FTokenization.png?alt=media&token=4d2a4178-4558-4e18-9183-264267d763fa" width="100%" alt="Tokenization">
 
 **3D Secure Card Payments**
 
 3D Secure provides a layer of protection against fraudulent payments that is supported by most card issuers.
 Unlike regular card payments, 3D Secure requires cardholders to complete an additional verification step with the issuer. Typically, this involves showing the customer an authentication page on their bank’s website, where they are prompted to enter a password associated with the card or a verification code sent to their phone. This process is familiar to customers through the card networks’ brand names, such as Visa Secure and Mastercard Identity Check.
+
+<strong>Step 1</strong>
+<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2F3D_Secure_Step1.png?alt=media&token=dbc4180c-fab1-49ca-b77f-8f0ea25bc46a" width="100%" alt="3D Secure Step1">
+
+<strong>Step 2</strong>
+<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2F3D_Secure_Step2.png?alt=media&token=57963ae8-41a1-4aa3-b219-d523270cac32" width="100%" alt="3D Secure Step2">
