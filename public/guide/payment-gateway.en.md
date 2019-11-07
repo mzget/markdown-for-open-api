@@ -61,10 +61,6 @@ K-Payment Gateway provide payment UI library for create one time use token that 
 3D Secure provides a layer of protection against fraudulent payments that is supported by most card issuers.
 Unlike regular card payments, 3D Secure requires cardholders to complete an additional verification step with the issuer. Typically, this involves showing the customer an authentication page on their bank’s website, where they are prompted to enter a password associated with the card or a verification code sent to their phone. This process is familiar to customers through the card networks’ brand names, such as Visa Secure and Mastercard Identity Check.
 
-<strong>Step 1</strong>
-
-<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2F3D_Secure_Step1.png?alt=media&token=dbc4180c-fab1-49ca-b77f-8f0ea25bc46a" width="100%" alt="3D Secure Step1">
-
-<strong>Step 2</strong>
+<strong>Card Issuer Authentication</strong>
 
 <img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2F3D_Secure_Step2.png?alt=media&token=57963ae8-41a1-4aa3-b219-d523270cac32" width="100%" alt="3D Secure Step2">
