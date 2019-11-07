@@ -2,6 +2,8 @@
 
 ---
 
+[_If you new to K-Payment-Gateway. Please read merchant integration guideline first_](/open-api/guide/payment-gateway)
+
 ### Description
 
 After you collect data and tokenize your customer’s credit card, you can charge the card immediately.
@@ -9,7 +11,7 @@ Unlike tokenization, which occurs in the browser, charge attempts are made from 
 
 <br/>
 
-```
+```bash
 [GROUP][COPYABLE]
 ---[Test Endpoint]---
 https://APIPORTALTEST.kasikornbank.com:12002/kpgw/card/v1/charge
