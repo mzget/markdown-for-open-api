@@ -1,5 +1,7 @@
 # K-Payment Gateway
 
+---
+
 ## Merchant Integration Guideline 1.0
 
 ### 1. System Details
