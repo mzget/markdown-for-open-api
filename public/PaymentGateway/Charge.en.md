@@ -53,7 +53,7 @@ _Sample Request_
 ```bash
 curl -X POST \
   -H 'Content-Type: application/json' \
-  -H 'api-key : skey_test_9YTlSpEcTsINiQTAsdojSVY6eTi1mH' \
+  -H 'x-api-key : skey_test_9YTlSpEcTsINiQTAsdojSVY6eTi1mH' \
   -H 'Partner-Id : PTR1902369' \
   -H 'Partner-Secret : 7da57c4eb242435fa3e91bb7a69e2a28' \
   -d '{	"amount": 200.50,
