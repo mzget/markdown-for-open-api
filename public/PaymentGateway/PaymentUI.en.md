@@ -2,7 +2,9 @@
 
 ---
 
-<a href="/open-api/guide/payment-gateway">_If you new to K-Payment-Gateway. Please read merchant integration guideline first_</a>
+<!-- <a href="/open-api/guide/payment-gateway"></a> -->
+
+[_If you new to K-Payment-Gateway. Please read merchant integration guideline first_](/open-api/guide/payment-gateway)
 
 ### Description
 
