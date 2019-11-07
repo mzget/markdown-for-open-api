@@ -2,18 +2,18 @@
 
 ## Merchant Integration Guideline 1.0
 
----
-
 ### 1. System Details
 
 K-Payment Gateway provided by the KASIKORNBANK Public Company Limited (hereinafter referred to as “KBank”) is the online payment service to facilitate merchants accept card payment (both credit and debit card), support multi-currencies over the world, and Thai QR payment. We provide you with the ability to customize the look and feel of your web page while ensuring that you are compliant with PCI DSS 3.2 Requirements.
 
 <strong>Customer Journey</strong>
 
-1. Card Payment
+<strong>1. Card Payment</strong>
+
    <img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2FCard_Payment.jpg?alt=media&token=edf5db68-a2e7-4573-99ef-82f1fa5a2f0a" width="100%" alt="Card Payment" />
 
-2. QR Payment
+<strong>2. QR Payment</strong>
+
    <img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2FQR_Payment.jpg?alt=media&token=4052bd88-c6da-47b3-8924-0857eec9643b" width="100%" alt="QR Payment">
 
 ---
@@ -62,7 +62,9 @@ K-Payment Gateway provide payment UI library for create one time use token that 
 Unlike regular card payments, 3D Secure requires cardholders to complete an additional verification step with the issuer. Typically, this involves showing the customer an authentication page on their bank’s website, where they are prompted to enter a password associated with the card or a verification code sent to their phone. This process is familiar to customers through the card networks’ brand names, such as Visa Secure and Mastercard Identity Check.
 
 <strong>Step 1</strong>
+
 <img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2F3D_Secure_Step1.png?alt=media&token=dbc4180c-fab1-49ca-b77f-8f0ea25bc46a" width="100%" alt="3D Secure Step1">
 
 <strong>Step 2</strong>
+
 <img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2F3D_Secure_Step2.png?alt=media&token=57963ae8-41a1-4aa3-b219-d523270cac32" width="100%" alt="3D Secure Step2">
