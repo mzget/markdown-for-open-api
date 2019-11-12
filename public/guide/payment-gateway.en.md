@@ -2,7 +2,7 @@
 
 ---
 
-## Get Started
+## [Get Started](#get-started)
 
 <img src="https://firebasestorage.googleapis.com/v0/b/imageupload-19583.appspot.com/o/icon_manage.png?alt=media&token=639509f9-2202-4d45-9efd-349b4d7d9f8d" alt="manage"  width="25" height="25"  style="object-fit: contain; margin-right: 10px;" />
 <a name="step1">
@@ -46,7 +46,7 @@
 
 ---
 
-## Merchant Integration Guideline 1.0
+## [Merchant Integration Guideline 1.0](#merchant-integration)
 
 ### 1. System Details
 
@@ -94,7 +94,7 @@ Which type of credit card that you need to enable the 3D Secure payment?
 
 ---
 
-## Fraud Protection
+## [Fraud Protection](#fraud-protection)
 
 **Tokenization**
 
