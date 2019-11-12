@@ -48,9 +48,10 @@ export function CardPayment(props: any) {
       onFinish={onFinish}
       onProcess={onProcess}
       debug={true}
-      attrs={{ scriptUrl:
-      "https://uat-kpaymentgateway.new-kpgw.com/ui/v2/kpayment.min.js",
-      apiKey:"pkey_prod_5BpmBr5LpqG84jYnDLPQe3Zv1OuhdN5dg", amount: "74.00",
+      attrs={{
+      scriptUrl: "https://uat-kpaymentgateway.new-kpgw.com/ui/v2/kpayment.min.js",
+      apiKey: "pkey_prod_5BpmBr5LpqG84jYnDLPQe3Zv1OuhdN5dg",
+      amount: "74.00",
       currency: "THB",
       paymentMethods: "card",
       shopName: "Your Shop Name", }} />
