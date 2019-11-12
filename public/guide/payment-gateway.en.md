@@ -5,7 +5,8 @@
 ## Get Started
 
 <img src="https://firebasestorage.googleapis.com/v0/b/imageupload-19583.appspot.com/o/icon_manage.png?alt=media&token=639509f9-2202-4d45-9efd-349b4d7d9f8d" alt="manage"  width="25" height="25"  style="object-fit: contain; margin-right: 10px;" /><a name="step2">
-<a name="step1"><strong>ขั้นตอนที่ 1:</strong> สมัครใช้งาน และเข้าสู่ระบบ</a>
+<a name="step1">
+<strong>ขั้นตอนที่ 1:</strong> สมัครใช้งาน และเข้าสู่ระบบ</a>
 
 ก่อนเข้าใช้งาน APIs กรุณา
 
@@ -41,8 +42,6 @@
 คุณสามารถเลือก API ที่อยากจะเริ่ม Testing ได้ โดยรายละเอียดการตั้งค่า ในการเชื่อมต่อ API จะอยู่ใน API Documentation
 
 คุณพร้อมแล้วที่จะเริ่มสร้าง Application ด้วย API บน Sandbox ของธนาคาร!
-<br />
-<br/>
 
 ---
 
