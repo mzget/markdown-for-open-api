@@ -1,4 +1,48 @@
-# K-Payment Gateway
+# <strong>K-Payment Gateway</strong>
+
+---
+
+## Get Started
+
+<img src="https://firebasestorage.googleapis.com/v0/b/imageupload-19583.appspot.com/o/icon_manage.png?alt=media&token=639509f9-2202-4d45-9efd-349b4d7d9f8d" alt="manage"  width="25" height="25"  style="object-fit: contain; margin-right: 10px;" /><a name="step2">
+<a name="step1"><strong>ขั้นตอนที่ 1:</strong> สมัครใช้งาน และเข้าสู่ระบบ</a>
+
+ก่อนเข้าใช้งาน APIs กรุณา
+
+<p>
+1) สมัครใช้งานเพื่อ <strong><a href="/open-api/register">สร้าง Account</a></strong> ใหม่
+</p>
+<p>
+2) ทำตามขั้นตอนในการสมัครใช้งาน และทำการ <strong><a href="/open-api/login">Log In</a></strong> เข้าสู่ระบบ
+</p>
+
+---
+
+<img src="https://firebasestorage.googleapis.com/v0/b/imageupload-19583.appspot.com/o/icon_partner.png?alt=media&token=b210871c-6594-400e-8cd1-b0534c1950db" alt="partner"  width="25" height="25"  style="object-fit: contain; margin-right: 10px;" />
+<a name="step2">
+<strong>ขั้นตอนที่ 2:</strong> 
+รับ PartnerID, PartnerSecret, Public & Secret Key
+</a>
+
+<p>
+ทำการสร้าง App บน <strong><a href="/open-api/my-apps">Application Dashboard</a></strong> เพื่อรับ <b>PartnerID, PartnerSecret,   Public & Secret Key</b>
+</p>
+
+<div class="image-wrap" style="text-align: center; margin: 30px 0px ;" >
+<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2Fguide_kpgw_create.png?alt=media&token=e728b77a-cb53-41d9-ae88-401105a44e6d" alt="create-app"  width="80%" height="auto" /></div>
+
+<div class="image-wrap" style="text-align: center; margin: 30px 0px ;" >
+<img src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/kpgw%2Fguide_kpgw_app.png?alt=media&token=60f321a6-bf0c-4672-8f44-fc0a376e0a65" alt="kpgw-app"  width="80%" height="auto" /></div>
+---
+
+<img src="https://firebasestorage.googleapis.com/v0/b/imageupload-19583.appspot.com/o/icon_api_black.png?alt=media&token=c5cbc9d7-231b-450f-8856-1f446c1afb4f" alt="api"  width="25" height="25"  style="object-fit: contain; margin-right: 10px;" />
+<a name="step3"><strong>ขั้นตอนที่ 3:</strong> เริ่มใช้งาน Sandbox</a>
+
+คุณสามารถเลือก API ที่อยากจะเริ่ม Testing ได้ โดยรายละเอียดการตั้งค่า ในการเชื่อมต่อ API จะอยู่ใน API Documentation
+
+คุณพร้อมแล้วที่จะเริ่มสร้าง Application ด้วย API บน Sandbox ของธนาคาร!
+<br />
+<br/>
 
 ---
 
