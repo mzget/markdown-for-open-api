@@ -20,8 +20,9 @@ For testing purposes, you have to include this script into your checkout page. I
 
 **Sample code for payment UI integration**
 
-```html
-[GROUP][COPYABLE] ---[HTML/html]---
+```javascript
+[GROUP][COPYABLE]
+---[HTML/html]---
 <form method="POST" action="/api/checkout">
   <script
     type="text/javascript"
@@ -34,17 +35,28 @@ For testing purposes, you have to include this script into your checkout page. I
   ></script>
 </form>
 
----[React/tsx]--- import React, { useEffect } from "react"; import KPayment from
-"react-kpayment"; export function CardPayment(props: any) { return (
-<React.Fragment>
-  <p>Credit/Debit Card</p>
-  <KPayment formAction="/api/checkout" onFinish={onFinish} onProcess={onProcess}
-  debug={true} attrs={{ scriptUrl:
-  "https://uat-kpaymentgateway.new-kpgw.com/ui/v2/kpayment.min.js",
-  apiKey:"pkey_prod_5BpmBr5LpqG84jYnDLPQe3Zv1OuhdN5dg", amount: "74.00",
-  currency: "THB", paymentMethods: "card", shopName: "Your Shop Name", }} />
-</React.Fragment>
-) }
+---[React/JSX]---
+import React, { useEffect } from "react";
+import KPayment from "react-kpayment";
+
+export function CardPayment(props: any) {
+  return (
+    <React.Fragment>
+      <p>Credit/Debit Card</p>
+      <KPayment
+      formAction="/api/checkout"
+      onFinish={onFinish}
+      onProcess={onProcess}
+      debug={true}
+      attrs={{ scriptUrl:
+      "https://uat-kpaymentgateway.new-kpgw.com/ui/v2/kpayment.min.js",
+      apiKey:"pkey_prod_5BpmBr5LpqG84jYnDLPQe3Zv1OuhdN5dg", amount: "74.00",
+      currency: "THB",
+      paymentMethods: "card",
+      shopName: "Your Shop Name", }} />
+    </React.Fragment>
+  )
+}
 ```
 
 When the form above has loaded, it will create an instance of a Payment form on your checkout page as follows:
