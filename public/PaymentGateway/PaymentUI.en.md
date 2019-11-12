@@ -35,7 +35,7 @@ For testing purposes, you have to include this script into your checkout page. I
   ></script>
 </form>
 
----[React/JSX]---
+---[React/tsx]---
 import React, { useEffect } from "react";
 import KPayment from "react-kpayment";
 
