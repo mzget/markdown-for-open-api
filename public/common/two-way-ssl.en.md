@@ -50,8 +50,8 @@ https://APIPORTALTEST.kasikornbank.com:12002/test/ssl
   "errorMsg": null,
   "certificateObjs": [
     {
-      "subject": "CN=kbank.pentest.1, O=KBTG, ST=Bangkok, C=TH",
-      "issuer": "CN=KASIKORNBANK OpenAPI ROOT CA, OU=KBTG, O=KASIKORN BUSINESS TECHNOLOGY-GROUP, L=Ratburana, ST=Bangkok, C=TH",
+      "subject": "CN=clientcertificate.testcompany.com, O=TestCompany, ST=Bangkok, C=TH",
+      "issuer": "CN=GlobalSign RSA OV SSL CA 2018, O=GlobalSign nv-sa, C=BE",
       "startDate": "Thu May 17 19:29:15 ICT 2018",
       "expireDate": "Tue May 16 19:29:15 ICT 2023",
       "serialNumber": "14331402536859360582"
@@ -94,8 +94,8 @@ import * as request from 'request';
 import * as fs from 'fs';
 import * as path from 'path';
 
-let keyfile = path.join(__dirname, 'kbank.pentest.1.key');
-let certificateFile = path.join(__dirname, 'kbank.pentest.1.crt');
+let keyfile = path.join(__dirname, 'testcompany.key');
+let certificateFile = path.join(__dirname, 'testcompany.crt');
 
 export function Request() {
   const options = {
@@ -136,7 +136,7 @@ import (
 )
 
 func main() {
-	keyPair, err := tls.LoadX509KeyPair("../kbank.pentest.1/kbank.pentest.1.crt", "../kbank.pentest.1/kbank.pentest.1.key")
+	keyPair, err := tls.LoadX509KeyPair("../certs/testcompany.crt", "../certs/testcompany.key")
 	if err != nil {
 		log.Fatalln("Unable to load cert", err)
 	}
@@ -150,7 +150,7 @@ func main() {
 	}
 	tr := &http.Transport{
 		TLSClientConfig: &tls.Config{
-			InsecureSkipVerify: true,
+			InsecureSkipVerify: false,
 			Certificates:       []tls.Certificate{keyPair},
 		},
 	}
