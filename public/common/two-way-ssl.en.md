@@ -69,13 +69,13 @@ https://APIPORTAL.kasikornbank.com:12002/test/ssl
 
    <br />
 
-   <img alt="Postman Review Certificates" src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/two-way-ssl%2FPostman-Review-Cert.png?alt=media&token=002c38f8-25de-4d63-840a-16a049a1d568" width="100%" />
+   <img alt="Postman Review Certificates" src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/two-way-ssl%2FPostman-Review-Cert-v2.png?alt=media&token=86f28bb5-6129-434f-876d-aa72bfea17a9" width="100%" />
 
 3. Add your _certificates_ and _private key_:
 
    <br />
 
-   <img alt="Postman Add Certificates" src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/two-way-ssl%2FPostman-Add-Cert.png?alt=media&token=16eceabe-fe8a-40ce-b01c-919b6c2d55a1" width="100%" />
+   <img alt="Postman Add Certificates" src="https://firebasestorage.googleapis.com/v0/b/kbank-open-api.appspot.com/o/two-way-ssl%2FPostman-Add-Cert-v2.png?alt=media&token=2061af51-c02c-43fd-8d37-219a1d453126" width="100%" />
 
 <br />
 
